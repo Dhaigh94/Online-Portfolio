@@ -1,0 +1,90 @@
+ <nav class="navbar fixed-bottom navbar-expand-xl navbar-dark bg-dark">
+  <a id="top" class="navbar-brand">Social Media</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarfooter" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarfooter">
+    <div class="navbar-nav">
+      <div class="btn-group btn-group-sm" role="group" aria-label="...">
+      <div id="Space2">
+      <button type="button" class="btn btn-light btn-sm">
+  <a class="navbar-brand" href="https://www.facebook.com/david.haigh.104" target="_blank" id="social">
+    <img src="https://i.imgur.com/y5vdefs.png" width="30" height="30" class="d-inline-block align-top">
+    Facebook
+  </a>
+  </button>
+  </div>
+  <div id="Space2">
+  <button type="button" class="btn btn-light btn-sm">
+  <a class="navbar-brand" href="https://twitter.com/DavidHRmoon" target="_blank" id="social">
+    <img src="https://i.imgur.com/rHmhd1Z.png" width="30" height="30" class="d-inline-block align-top">
+    Twitter
+  </a>
+  </button>
+  </div>
+  </div>
+  <div class="btn-group btn-group-sm" role="group" aria-label="...">
+  <div id="Space2">
+  <button type="button" class="btn btn-light btn-sm">
+  <a class="navbar-brand" href="https://www.instagram.com/davidhrmoon/" target="_blank" id="social">
+    <img src="https://i.imgur.com/rUE3gNp.png" width="30" height="30" class="d-inline-block align-top">
+    Instagram
+  </a>
+  </button>
+  </div>
+  <div id="Space2">
+      <button type="button" class="btn btn-light btn-sm">
+  <a class="navbar-brand" href="https://www.linkedin.com/in/david-haigh-46161097/" target="_blank" id="social">
+    <img src="https://i.imgur.com/piVb4mC.png" width="30" height="30" class="d-inline-block align-top">
+    LinkedIn
+  </a>
+  </button>
+  </div>
+  </div>
+  <div class="btn-group btn-group-sm" role="group" aria-label="...">
+  <div id="Space2">
+      <button type="button" class="btn btn-light btn-sm">
+  <a class="navbar-brand" href="https://github.com/Dhaigh94" target="_blank" id="social">
+    <img src="https://i.imgur.com/JobfPGK.png" width="30" height="30" class="d-inline-block align-top">
+    Github
+  </a>
+  </button>
+  </div>
+  <div id="Space2">
+      <button type="button" class="btn btn-light btn-sm">
+  <a class="navbar-brand" href="https://www.youtube.com/channel/UCkJ0xOTmM3rXfSGj2xcsnLg" target="_blank" id="social">
+    <img src="https://i.imgur.com/MUVUR5b.png" width="30" height="30" class="d-inline-block align-top">
+    Youtube
+  </a>
+  </button>
+  </div>
+  </div>
+  <div id="Space2">
+      <button type="button" class="btn btn-light btn-sm">
+  <a class="navbar-brand" href="https://plus.google.com/u/0/102870135957663698192" target="_blank" id="social">
+    <img src="https://i.imgur.com/CHgap60.png" width="30" height="30" class="d-inline-block align-top">
+    Google+
+  </a>
+  </button>
+  </div>
+    </div>
+  </div>
+</nav>
+<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+<script>
+$(function(){
+$('.navbar-nav a').each(function() {
+ if ($(this).prop('href') == window.location.href) {
+     $(this).addClass('active');
+    }
+  });
+});
+
+$('.navbar-nav a').on('click', function() {
+ $('.navbar-nav').find('#links.active').removeClass('active');
+  $(this).parent('#links').addClass('active');
+});
+</script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    </body>
+</html>
