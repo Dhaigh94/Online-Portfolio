@@ -1,0 +1,90 @@
+#top {
+    color: #FF6969;
+}
+
+body {
+    background-image: url("https://i.imgur.com/N8Ec0xQ.png");
+    background-size: cover;
+    background-position: center;
+    padding-bottom: 150px;
+}
+
+.container.main {
+    margin-top: 7.0em;
+}
+
+#delete {
+    display: inline;
+}
+
+#container {
+    text-align: center;
+}
+
+#header {
+    text-align: center;
+}
+
+#Space {
+    padding-top: 15px;
+}
+
+#Space2 {
+    padding-bottom: 4px;
+    padding-right: 5px;
+}
+
+iframe {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+p {
+    font-family: 'Roboto', sans-serif;
+}
+
+#Post {
+        border: 5px solid #ff006c;
+	padding: 20px;
+	max-width: 3000px;
+	margin: 20px auto;
+}
+
+#Comments {
+    color: blue;
+}
+
+#Grid {
+    object-fit: cover;
+    width: 500px;
+    height: 200px;
+}
+
+#Grid2 {
+    object-fit: cover;
+    width: 500px;
+    height: 400px;
+}
+
+strong {
+    font-family: 'Abril Fatface', cursive;
+}
+
+#button {
+    padding-top: 2px;
+}
+
+#social {
+    color: #000000;
+}
+
+li {
+    font-family: 'Roboto', sans-serif;
+}
+
+#date {
+	color: #FF6969;
+	text-transform: uppercase;
+	letter-spacing: 0.2rem;
+}
