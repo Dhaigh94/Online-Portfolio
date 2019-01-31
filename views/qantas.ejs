@@ -2,18 +2,46 @@
 <br>
 <h1 id="header">Qantas</h1>
 <div class="container">
-<p class="text-center">I worked at Qantas as a Junior QA on a 12-month contract.
-My job as Junior QA is to provide Quality Assurance to the teams for Qantas Insurance and Qantas Money by testing their Front-End, Back-End/Microservices and doing a bit of 
-Automation testing using the TestCafe Browser Recorder. Also using TestCafe to test Cross Browser.
+<p class="text-center">I worked at Qantas as a Junior QA on a 12-month contract. My job as Junior QA is to provide Quality Assurance to the teams for Qantas Insurance, 
+Qantas Money and our app for Qantas Insurance called Qantas Wellbeing by testing their Front-End, Back-End/Microservices using SoapUI, 
+Postman and our BDD framework to do API automation, testing web and mobile using Charles proxy to observe HTTP traffic and mock data using rewrites and doing a bit of Automation testing using the TestCafe 
+Browser Recorder. Also using TestCafe to test Cross Browser.
 </p>
-<p class="text-center">You can learn more about Qantas Insurance <a href="https://www.qantasassure.com/" target="_blank">here</a>. 
-You can learn more about Qantas Money <a href="https://www.qantasmoney.com/" target="_blank">here</a>.</p>
+<p class="text-center">Here are some of the work and projects I have been working on:</p>
+<br>
+<h2 id="header"><a href="https://insurance.qantas.com/" id="qantas" target="_blank">Qantas Insurance</a></h2>
+<p class="text-center">I was working on a project in the front-end which was made to improve the UI and sales for our 
+Travel Insurance product called the Travel Funnel.</p>
+<p class="text-center">The Old Travel Funnel used to be run by our partner QBE but our new one is run in-house which 
+I was testing with the Senior QA to check that the funnel works end to end, Checking that the UI is returning the right products 
+from the API based on the user's input. Also checking that the UI is consistent with different browsers and mobile devices.</p>
+<p class="text-center">You can check out our new Travel Funnel <a href="https://insurance.qantas.com/travel-insurance/quote" target="_blank">here</a>.</p>
+<div class="text-center">
+<img src="https://i.imgur.com/YPFCmcK.png?3" class="img-fluid img-thumbnail" alt="Responsive image">
+</div>
+<br>
+<h2 id="header"><a href="https://www.qantasmoney.com/" id="qantas" target="_blank">Qantas Money</a></h2>
+<p class="text-center"> For a short time, I was working on a project for the web team which was called Knowledge Based Authentication or KBA for short.</p>
+<p class="text-center">KBA is a web page in our Credit card application process which provides a extra layer of security to stop identity fraud by asking 3 questions based on their credit card application 
+to check that the person that is doing the application is the one that wants to apply for the credit card and is eligible for it.</p>
+<br>
+<h2 id="header">Qantas Wellbeing</h2>
+<p class="text-center">I was involved in a project in the backend for a new activity that is in the Qantas Wellbeing app called Sleep.</p>
+<p class="text-center">The new Sleep feature is in our app where the user creates the sleep challenge and earns Qantas points for completing the challenge.</p>
+<p class="text-center">This project was a challenge because there were so many edge cases to test and since this new feature was very front end directive it was a challenge to test it from the backend.</p>
+<p class="text-center">To test it from the backend we have to use SoapUI to create our tests and run them. Also, we have to use Postman to do time travel 
+on our API'S because of some of our tests we needed to jump to past and future times to test it.</p>
+<p class="text-center">The Sleep feature has been advertised and launched on TV in the Sunrise program which you can watch 
+<a href="https://au.news.yahoo.com/earn-money-while-sleep-004036628.html" id="qantas" target="blank">here</a>.</p>
+<p class="text-center">If you want more information on the Qantas Wellbeing app you can click 
+<a href="https://insurance.qantas.com/wellbeing/qantaswellbeingapp" target="_blank">here</a>.</p>
 <br>
 <iframe style="position: relative; top: 0; left: 0; width: 100%; height: 100%;" 
-src="https://flickrembed.com/cms_embed.php?source=flickr&layout=responsive&input=www.flickr.com/photos/158960531@N05/albums/72157694853036912&sort=0&by=album&theme=slider&scale=fill&limit=10&skin=default&autoplay=true" 
-scrolling="no" frameborder="0" allowFullScreen="true" webkitallowfullscreen="true" mozallowfullscreen="true"><p>Compare over <a rel="nofollow" href="https://www.gapquotes.com">11 gap insurance providers</a> 
-at GapQuotes.com</p><small>Powered by <a href="https://flickrembed.com">flickr embed</a>.</small></iframe><script type="text/javascript">
-    function showpics(){var a=$("#box").val();$.getJSON("http://api.flickr.com/services/feeds/photos_public.gne?tags="+a+"&tagmode=any&format=json&jsoncallback=?",
-    function(a){$("#images").hide().html(a).fadeIn("fast"),$.each(a.items,function(a,e){$("<img/>").attr("src",e.media.m).appendTo("#images")})})}</script>
+src="https://flickrembed.com/cms_embed.php?source=flickr&layout=responsive&input=www.flickr.com/photos/158960531@N05/albums/72157704814065941&sort=0&by=album&theme=slider&scale=fit&speed=3000&limit=10&skin=default-light&autoplay=true" 
+scrolling="no" frameborder="0" allowFullScreen="true" webkitallowfullscreen="true" mozallowfullscreen="true"><p>tyres like 
+<a  href="https://www.comparetyres.com/tyres/brands/bridgestone/potenza-s001">Bridgestone Potenza</a> reviewed</p><small>Powered by 
+<a href="https://flickrembed.com">flickr embed</a>.</small></iframe><script type="text/javascript">function showpics(){var a=$("#box").val();
+$.getJSON("http://api.flickr.com/services/feeds/photos_public.gne?tags="+a+"&tagmode=any&format=json&jsoncallback=?",function(a)
+{$("#images").hide().html(a).fadeIn("fast"),$.each(a.items,function(a,e){$("<img/>").attr("src",e.media.m).appendTo("#images")})})}</script>
 </div>
 <% include ./partials/footer %>
