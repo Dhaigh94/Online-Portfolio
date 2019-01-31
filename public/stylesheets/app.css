@@ -34,6 +34,10 @@ body {
     padding-right: 5px;
 }
 
+#qantas {
+    color: #252a2d;
+}
+
 iframe {
     margin-left: auto;
     margin-right: auto;
