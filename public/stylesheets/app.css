@@ -3,7 +3,7 @@
 }
 
 body {
-    background-image: url("https://i.imgur.com/N8Ec0xQ.png");
+    background-image: url("https://i.imgur.com/pOGb77P.png");
     background-size: cover;
     background-position: center;
     padding-bottom: 150px;
@@ -11,6 +11,12 @@ body {
 
 .container.main {
     margin-top: 7.0em;
+}
+
+#area {
+    background-color: #FFFFFF;
+    border: 5px solid #C0C0C0;
+    padding-bottom: 4px;
 }
 
 #delete {
@@ -34,6 +40,10 @@ body {
     padding-right: 5px;
 }
 
+#links {
+    color: #252a2d;
+}
+
 #qantas {
     color: #252a2d;
 }
@@ -49,10 +59,11 @@ p {
 }
 
 #Post {
-        border: 5px solid #ff006c;
+    border: 5px solid #C0C0C0;
 	padding: 20px;
 	max-width: 3000px;
 	margin: 20px auto;
+	background-color: #FFFFFF;
 }
 
 #Comments {
