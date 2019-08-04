@@ -2,7 +2,7 @@
   "name": "Davids-Portfolio",
   "version": "1.0.0",
   "description": "Online Portfolio",
-  "main": "server.js",
+  "main": "app-server.js",
   "engines": {
     "node": "12.7.0",
     "npm": "6.10.2"
