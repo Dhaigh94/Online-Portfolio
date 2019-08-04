@@ -4,7 +4,7 @@
   "description": "Online Portfolio",
   "main": "app.js",
   "engines": {
-    "node": "10.6.0"
+    "node": "12.7.0"
   },
   "scripts": {
     "start": "node app.js"
