@@ -184,6 +184,6 @@ app.use(function(err, req, res, next){
     res.type('txt').send('Something is broken on our end, email me at davidhaigh94@gmail.com if this issue persist.');
 });
 
-app.listen(process.env.PORT, process.env.IP, function(){
-    console.log("PORTFOLIO IS RUNNING!");
+app.listen(8080, function(){
+    console.log("PORTFOLIO IS RUNNING! go to http://localhost:8080");
 });
