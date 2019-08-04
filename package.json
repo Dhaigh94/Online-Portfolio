@@ -2,13 +2,13 @@
   "name": "Davids-Portfolio",
   "version": "1.0.0",
   "description": "Online Portfolio",
-  "main": "app.js",
+  "main": "server.js",
   "engines": {
     "node": "12.7.0",
-    "npm": "^6.10.2"
+    "npm": "6.10.2"
   },
   "scripts": {
-    "start": "node app.js"
+    "start": "node app-server.js"
   },
   "author": "David Haigh",
   "license": "ISC",
