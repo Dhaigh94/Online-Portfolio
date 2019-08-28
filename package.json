@@ -13,11 +13,11 @@
   "author": "David Haigh",
   "license": "ISC",
   "dependencies": {
-    "body-parser": "^1.18.2",
-    "ejs": "^2.5.7",
-    "express": "^4.16.2",
+    "body-parser": "^1.19.0",
+    "ejs": "^2.6.2",
+    "express": "^4.17.1",
     "express-force-https": "^1.0.0",
-    "express-sanitizer": "^1.0.2",
+    "express-sanitizer": "^1.0.5",
     "method-override": "^2.3.10",
     "x-frame-options": "^1.0.0"
   }
