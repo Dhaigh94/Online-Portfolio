@@ -1,0 +1,19 @@
+{
+    "baseUrl": "http://localhost:8080",
+    "defaultCommandTimeout": 8000,
+    "execTimeout": 60000,
+    "taskTimeout": 60000,
+    "pageLoadTimeout": 30000,
+    "requestTimeout": 5000,
+    "responseTimeout": 30000,
+    "screenshotFolder": "cypress/screenshots",
+    "videosFolder": "cypress/videos",
+    "videoCompression": false,
+    "video": true,
+    "videoUploadOnPasses": true,
+    "trashAssetsBeforeRuns": true,
+    "darkMediaQuery": true,
+    "theme": "dark",
+    "viewportWidth": 1100,
+    "viewportHeight": 700
+}
