@@ -4,7 +4,8 @@
         "baseUrl": "../node_modules",
         "noEmit": true,
         "types": [
-            "cypress"
+            "cypress",
+            "@percy/cypress"
         ]
     },
     "include": [

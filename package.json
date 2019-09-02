@@ -28,6 +28,7 @@
     "x-frame-options": "^1.0.0"
   },
   "devDependencies": {
+    "@percy/cypress": "^2.0.1",
     "cypress-dark": "^1.7.14"
   }
 }
