@@ -1,4 +1,4 @@
-describe('Portfolio Cypress tests on the Home Page', () => {
+describe('Portfolio Home Page Tests', () => {
     beforeEach(function() {
         cy.visit('/')
         cy.url().should('include', 'http://localhost:8080')
@@ -27,7 +27,7 @@ describe('Portfolio Cypress tests on the Home Page', () => {
         cy.get('#Portfolio').should('have.attr', 'href').and('include', 'https://github.com/Dhaigh94/Online-Portfolio')
     })
 
-    it('Home', () => {
-        cy.percySnapshot();
+    it('Take a snapshot of the Home Page', () => {
+        cy.percySnapshot('Home');
     })
 })
