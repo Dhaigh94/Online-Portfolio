@@ -2,7 +2,7 @@
 This is my Online Portfolio I made from Scratch using NodeJS, HTML, CSS and Bootstrap.
 
 ### To Run the APP
-To run the app you need to install the node_modules by typing npm install in the project, then run it by typing ```node app-server.js```
+To run the app you need to install the node_modules by typing ```npm install``` in the project, then run it by typing ```node app-server.js```
 
 ### To Run Cypress
 Before you run Cypress you need to make sure the app is running.
