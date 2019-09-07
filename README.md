@@ -14,4 +14,4 @@ To run Percy you need to make sure that the app is running.
 Then you need to export the Percy token in the ENV variables, if you are using Windows you have to type set instead of export.
 Then you need to run ```npx percy exec -- cypress run```
 
-[![This project is using Percy.io for visual regression testing.](https://percy.io/static/images/percy-badge.svg)](https://percy.io/Davids-Stuff/Online-Portfolio)
+[![This project is using Percy.io for visual regression testing.](https://percy.io/static/images/percy-badge.svg)](https://percy.io/Davids-Stuff/Online-Portfolio2)
