@@ -6,6 +6,8 @@ body {
     background-image: url("https://i.imgur.com/pOGb77P.png");
     background-size: cover;
     background-position: center;
+    display: flex;
+    flex-direction: column;
     margin-bottom: 100px;
 }
 
