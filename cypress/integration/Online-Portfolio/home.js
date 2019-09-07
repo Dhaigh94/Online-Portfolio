@@ -11,23 +11,23 @@ describe('Portfolio Home Page Tests', () => {
         cy.get('@title').should('be.visible')
     })
 
-    it('Check that the Resume link is correct', () => {
+    it('Check that the Resume link is correct', function() {
         cy.get('#Resume').should('be.visible')
         cy.get('#Resume').should('have.attr', 'href').and('include', 'https://drive.google.com')
     })
 
-    it('Check that the Work link is going to the Work webpage', () => {
+    it('Check that the Work link is going to the Work webpage', function() {
         cy.get('#Worklink').should('be.visible')
         cy.get('#Worklink').click()
         cy.url().should('include', '/work')
     })
 
-    it('Check that the link to the Github repo is correct', () => {
+    it('Check that the link to the Github repo is correct', function() {
         cy.get('#Portfolio').should('be.visible')
         cy.get('#Portfolio').should('have.attr', 'href').and('include', 'https://github.com/Dhaigh94/Online-Portfolio')
     })
 
-    it('Take a snapshot of the Home Page', () => {
+    it('Take a snapshot of the Home Page', function() {
         cy.percySnapshot('Home');
     })
 })
