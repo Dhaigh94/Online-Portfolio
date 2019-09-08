@@ -97,9 +97,9 @@ li {
 /*FOOTER*/
 
 footer {
-    background: #16222A;
-    background: -webkit-linear-gradient(59deg, #3A6073, #16222A);
-    background: linear-gradient(59deg, #3A6073, #16222A);
+    background: #343a40;
+    background: -webkit-linear-gradient(59deg, #b20000, #343a40);
+    background: linear-gradient(59deg, #b20000, #343a40);
     color: white;
     margin-top:100px;
     padding-bottom: 10px;
@@ -112,7 +112,7 @@ footer {
   }
   
   footer a:hover {
-    color: #FA944B;
+    color: #00b3ff;
     text-decoration: none;
   }
   
@@ -160,15 +160,15 @@ footer {
   }
 
   .social-network a.icoInstagram:hover {
-    background-color: #FF1493;
+    background-color: #FFC0CB;
   }
 
   .social-network a.icoGithub:hover {
-    background-color: #9678b6;
+    background-color: #D8B2D8;
   }
 
   .social-network a.icoYoutube:hover {
-    background-color: #DC143C;
+    background-color: #00FF00;
   }
   
   .social-network a.icoFacebook:hover i,
