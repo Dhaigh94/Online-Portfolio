@@ -45,7 +45,11 @@ body {
 iframe {
     margin-left: auto;
     margin-right: auto;
-    display: block;
+    padding: 0px;
+    margin-bottom: 0px;
+    margin-top: 0px;
+    border: 0px;
+    display: inline-block;
 }
 
 p {
@@ -102,7 +106,7 @@ footer {
     background: linear-gradient(59deg, #b20000, #343a40);
     color: white;
     margin-top:100px;
-    padding-bottom: 10px;
+    padding-bottom: 40px;
   }
   
   footer a {
