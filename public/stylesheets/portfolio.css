@@ -102,7 +102,7 @@ footer {
     background: linear-gradient(59deg, #b20000, #343a40);
     color: white;
     margin-top:100px;
-    padding-bottom: 40px;
+    padding-bottom: 30px;
   }
   
   footer a {
@@ -160,11 +160,11 @@ footer {
   }
 
   .social-network a.icoInstagram:hover {
-    background-color: #FFC0CB;
+    background-color: #fd45bd;
   }
 
   .social-network a.icoGithub:hover {
-    background-color: #D8B2D8;
+    background-color: #c753ff;
   }
 
   .social-network a.icoYoutube:hover {
