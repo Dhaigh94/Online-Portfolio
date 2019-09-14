@@ -14,8 +14,7 @@ body {
 
 #area {
     background-color: #FFFFFF;
-    border: 5px solid #DB4C77;
-    padding-bottom: 4px;
+    padding-bottom: 6px;
 }
 
 #container {
@@ -53,7 +52,6 @@ p {
 }
 
 #Post {
-  border: 5px solid #DB4C77;
 	padding: 20px;
 	max-width: 3000px;
 	margin: 20px auto;
