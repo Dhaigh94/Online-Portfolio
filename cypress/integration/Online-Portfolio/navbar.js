@@ -9,7 +9,7 @@ describe('Portfolio Navbar Tests', () => {
         cy.get('[data-cy=Work]').click()
         cy.wait(4000)
         cy.url().should('include', '/work')
-        cy.percySnapshot('Work');
+        cy.percySnapshot('Work')
     })
 
     it('Check that the Home link on the Navbar goes to the Home page by clicking it from a another page', function() {
@@ -22,26 +22,26 @@ describe('Portfolio Navbar Tests', () => {
     it('Check that the Projects link on the Navbar goes to the Projects page', function() {
         cy.get('[data-cy=Projects]').click()
         cy.url().should('include', '/projects')
-        cy.percySnapshot('Projects');
+        cy.percySnapshot('Projects')
     })
 
     it('Check that the Blog link on the Navbar goes to the Blog page', function() {
         cy.get('[data-cy=Blog]').click()
         cy.url().should('include', '/blog')
-        cy.percySnapshot('Blog');
+        cy.percySnapshot('Blog')
     })
 
     it('Check that the Resources link on the Navbar goes to the Resources page', function() {
         cy.get('[data-cy=Resources]').click()
         cy.url().should('include', '/resources')
         cy.get('[data-cy=resourcesslideshow]', {timeout: 10000}).should('be.visible')
-        cy.percySnapshot('Resources');
+        cy.percySnapshot('Resources')
     })
 
     it('Check that the Contact link on the Navbar goes to the Contact page', function() {
         cy.get('[data-cy=Contact]').click()
         cy.url().should('include', '/contact')
         cy.wait(4000)
-        cy.percySnapshot('Contact');
+        cy.percySnapshot('Contact')
     })
 })
