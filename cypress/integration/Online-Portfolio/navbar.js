@@ -36,7 +36,7 @@ describe('Portfolio Navbar Tests', () => {
     it('Check that the Resources link on the Navbar goes to the Resources page', function() {
         cy.get('[data-cy=Resources]').click()
         cy.url().should('include', '/resources')
-        cy.wait(15000)
+        cy.wait(25000)
         cy.get('[data-cy=resourcesslideshow]').should('be.visible')
         cy.percySnapshot('Resources')
     })
