@@ -22,19 +22,22 @@ describe('Portfolio Navbar Tests', () => {
     it('Check that the Projects link on the Navbar goes to the Projects page', function() {
         cy.get('[data-cy=Projects]').click()
         cy.url().should('include', '/projects')
+        cy.wait(4000)
         cy.percySnapshot('Projects')
     })
 
     it('Check that the Blog link on the Navbar goes to the Blog page', function() {
         cy.get('[data-cy=Blog]').click()
         cy.url().should('include', '/blog')
+        cy.wait(4000)
         cy.percySnapshot('Blog')
     })
 
     it('Check that the Resources link on the Navbar goes to the Resources page', function() {
         cy.get('[data-cy=Resources]').click()
         cy.url().should('include', '/resources')
-        cy.get('[data-cy=resourcesslideshow]', {timeout: 10000}).should('be.visible')
+        cy.wait(15000)
+        cy.get('[data-cy=resourcesslideshow]').should('be.visible')
         cy.percySnapshot('Resources')
     })
 
