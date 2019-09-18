@@ -10,7 +10,7 @@ describe('Error Page Tests', () => {
         cy.get('[data-cy="404"]').should('be.visible')
         cy.get('[data-cy="cannotfind"]').should('be.visible')
         cy.get('[data-cy="backhome"]').should('be.visible')
-        cy.wait(10000)
+        cy.wait(15000)
         cy.percySnapshot('404')
     })
 
@@ -29,7 +29,7 @@ describe('Error Page Tests', () => {
         cy.visit('http://localhost:8080/500')
         cy.get('[data-cy="500"]').should('be.visible')
         cy.get('[data-cy="servererror"]').should('be.visible')
-        cy.wait(10000)
+        cy.wait(15000)
         cy.percySnapshot('500')
     })
 })
