@@ -28,7 +28,6 @@ describe('Portfolio Home Page Tests', () => {
     })
 
     it('Take a snapshot of the Home Page', function() {
-        cy.wait(10000)
         cy.percySnapshot('Home')
     })
 })
