@@ -31,9 +31,9 @@ app.get("/work", function(req, res){
     res.render("work");
 });
 
-// QANTAS ROUTE
-app.get("/qantas", function(req, res){
-    res.render("qantas");
+// QANTAS LOYALTY ROUTE
+app.get("/qantasloyalty", function(req, res){
+    res.render("qantasloyalty");
 });
 
 // LORICA HEALTH ROUTE
