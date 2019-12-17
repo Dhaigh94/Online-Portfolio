@@ -10,7 +10,11 @@
   "scripts": {
     "start": "node server.js",
     "cypress:open": "cypress open",
-    "cypress:run": "cypress run"
+    "cypress:run": "cypress run",
+    "cypress:chrome": "cypress run --browser chrome",
+    "cypress:chromium": "cypress run --browser chromium",
+    "cypress:canary": "cypress run --browser canary",
+    "percy": "percy exec -- cypress run"
   },
   "keywords": [
     "Portfolio"
