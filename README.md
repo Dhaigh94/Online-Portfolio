@@ -12,6 +12,6 @@ To run Cypress in the command line you need to type ```npm run cypress:run``` wh
 ### To Run Percy
 To run Percy you need to make sure that the app is running.
 Then you need to export the Percy token in the ENV variables, if you are using Windows you have to type set instead of export.
-Then you need to run ```npm run percy```
+Then you need to run ```npm run percy:run```.
 
 [![This project is using Percy.io for visual regression testing.](https://percy.io/static/images/percy-badge.svg)](https://percy.io/Davids-Stuff/Online-Portfolio)

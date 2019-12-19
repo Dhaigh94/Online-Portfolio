@@ -14,7 +14,7 @@
     "cypress:chrome": "cypress run --browser chrome",
     "cypress:chromium": "cypress run --browser chromium",
     "cypress:canary": "cypress run --browser canary",
-    "percy": "percy exec -- cypress run"
+    "percy:run": "percy exec -- cypress run"
   },
   "keywords": [
     "Portfolio"
