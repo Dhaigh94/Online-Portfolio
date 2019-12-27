@@ -35,7 +35,7 @@
   "devDependencies": {
     "@percy/cypress": "^2.2.0",
     "bootstrap": "^4.4.1",
-    "cypress": "^3.8.0",
+    "cypress": "^3.8.1",
     "cypress-dark": "^1.7.14"
   }
 }
