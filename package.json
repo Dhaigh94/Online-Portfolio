@@ -8,7 +8,8 @@
     "npm": "6.12.1"
   },
   "scripts": {
-    "start": "node server.js",
+    "start": "npm install&&node server.js",
+    "local": "node server.js",
     "cypress:open": "cypress open",
     "cypress:run": "cypress run",
     "cypress:chrome": "cypress run --browser chrome",
