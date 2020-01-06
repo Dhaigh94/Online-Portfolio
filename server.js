@@ -34,6 +34,11 @@ app.get("/work", function(req, res){
     res.render("work");
 });
 
+// QANTAS AIRLINE ROUTE
+app.get("/qantasairline", function(req, res){
+    res.render("qantasairline");
+});
+
 // QANTAS LOYALTY ROUTE
 app.get("/qantasloyalty", function(req, res){
     res.render("qantasloyalty");
