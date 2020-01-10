@@ -13,7 +13,7 @@ describe('Portfolio Home Page Tests', () => {
 
     it('Check that the Resume link is correct', function() {
         cy.get('[data-cy=Resume]').should('be.visible')
-        cy.get('[data-cy=Resume]').should('have.attr', 'href').and('include', 'https://drive.google.com')
+        cy.get('[data-cy=Resume]').should('have.attr', 'href').and('include', '/docs/Resume.pdf')
     })
 
     it('Check that the Work link is going to the Work webpage', function() {
