@@ -26,7 +26,7 @@ app.get("/", function(req, res){
 
 // HOME ROUTE
 app.get("/home", function(req, res){
-    res.render("home");
+    res.render("homefolder/home");
 });
 
 // WORK ROUTE
