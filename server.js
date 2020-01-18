@@ -91,37 +91,37 @@ app.get("/play2lead", function(req, res){
 
 // PROJECTS ROUTE
 app.get("/projects", function(req, res){
-    res.render("projects");
+    res.render("projectpages/projects");
 });
 
 // RGB COLOUR GUESSING GAME ROUTE
 app.get("/rgb-colour-guessing-game", function(req, res){
-    res.render("rgbcolourgame");
+    res.render("projectpages/rgbcolourgame");
 });
 
 // PATATAP CLONE ROUTE
 app.get("/patatap-clone", function(req, res){
-    res.render("patatapclone");
+    res.render("projectpages/patatapclone");
 });
 
 // PHOTO BOARD ROUTE
 app.get("/photo-board", function(req, res){
-    res.render("photoboard");
+    res.render("projectpages/photoboard");
 });
 
 // IMAGE GALLERY ROUTE
 app.get("/image-gallery", function(req, res){
-    res.render("imagegallery");
+    res.render("projectpages/imagegallery");
 });
 
 // RAW APP ROUTE
 app.get("/raw-app", function(req, res){
-    res.render("rawapp");
+    res.render("projectpages/rawapp");
 });
 
 // GLASS CUP ROUTE
 app.get("/glass-cup", function(req, res){
-    res.render("glasscup");
+    res.render("projectpages/glasscup");
 });
 
 // BLOG ROUTE
