@@ -26,7 +26,7 @@ app.get("/", function(req, res){
 
 // HOME ROUTE
 app.get("/home", function(req, res){
-    res.render("homefolder/home");
+    res.render("other/home");
 });
 
 // WORK ROUTE
@@ -141,12 +141,12 @@ app.get("/what-a-product-owner-wants-from-a-junior-tester", function(req, res){
 
 // RESOURCES ROUTE
 app.get("/resources", function(req, res){
-    res.render("resources");
+    res.render("other/resources");
 });
 
 // CONTACT ROUTE
 app.get("/contact", function(req, res){
-    res.render("contact");
+    res.render("other/contact");
 });
 
 // 500 ROUTE
