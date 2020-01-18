@@ -126,17 +126,17 @@ app.get("/glass-cup", function(req, res){
 
 // BLOG ROUTE
 app.get("/blog", function(req, res){
-    res.render("blog");
+    res.render("blogpages/blog");
 });
 
 // MY TESTING STORY ROUTE
 app.get("/my-testing-story", function(req, res){
-    res.render("mytestingstory");
+    res.render("blogpages/mytestingstory");
 });
 
 // WHAT A PRODUCT OWNER WANTS FROM A JUNIOR TESTER ROUTE
 app.get("/what-a-product-owner-wants-from-a-junior-tester", function(req, res){
-    res.render("WAPOWFAJT");
+    res.render("blogpages/WAPOWFAJT");
 });
 
 // RESOURCES ROUTE
