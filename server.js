@@ -26,132 +26,132 @@ app.get("/", function(req, res){
 
 // HOME ROUTE
 app.get("/home", function(req, res){
-    res.render("home");
+    res.render("other/home");
 });
 
 // WORK ROUTE
 app.get("/work", function(req, res){
-    res.render("work");
+    res.render("workpages/work");
 });
 
 // QANTAS AIRLINE ROUTE
 app.get("/qantasairline", function(req, res){
-    res.render("qantasairline");
+    res.render("workpages/qantasairline");
 });
 
 // QANTAS LOYALTY ROUTE
 app.get("/qantasloyalty", function(req, res){
-    res.render("qantasloyalty");
+    res.render("workpages/qantasloyalty");
 });
 
 // LORICA HEALTH ROUTE
 app.get("/lorica-health", function(req, res){
-    res.render("loricahealth");
+    res.render("workpages/loricahealth");
 });
 
 // SUNCORP ROUTE
 app.get("/suncorp", function(req, res){
-    res.render("suncorp");
+    res.render("workpages/suncorp");
 });
 
 // WIRED2CLOUD ROUTE
 app.get("/wired2cloud", function(req, res){
-    res.render("wired2cloud");
+    res.render("workpages/wired2cloud");
 });
 
 // SIRC ROUTE
 app.get("/sirc", function(req, res){
-    res.render("sirc");
+    res.render("workpages/sirc");
 });
 
 // COVATA ROUTE
 app.get("/covata", function(req, res){
-    res.render("covata");
+    res.render("workpages/covata");
 });
 
 // CAREERVENTURES ROUTE
 app.get("/careerventures", function(req, res){
-    res.render("careerventures");
+    res.render("workpages/careerventures");
 });
 
 // AIE RUMBLE ACADEMY ROUTE
 app.get("/aie-rumble-academy", function(req, res){
-    res.render("aierumbleacademy");
+    res.render("workpages/aierumbleacademy");
 });
 
 // KARTEL DIGITAL ROUTE
 app.get("/kartel-digital", function(req, res){
-    res.render("karteldigital");
+    res.render("workpages/karteldigital");
 });
 
 // PLAY2LEAD ROUTE
 app.get("/play2lead", function(req, res){
-    res.render("play2lead");
+    res.render("workpages/play2lead");
 });
 
 // PROJECTS ROUTE
 app.get("/projects", function(req, res){
-    res.render("projects");
+    res.render("projectpages/projects");
 });
 
 // RGB COLOUR GUESSING GAME ROUTE
 app.get("/rgb-colour-guessing-game", function(req, res){
-    res.render("rgbcolourgame");
+    res.render("projectpages/rgbcolourgame");
 });
 
 // PATATAP CLONE ROUTE
 app.get("/patatap-clone", function(req, res){
-    res.render("patatapclone");
+    res.render("projectpages/patatapclone");
 });
 
 // PHOTO BOARD ROUTE
 app.get("/photo-board", function(req, res){
-    res.render("photoboard");
+    res.render("projectpages/photoboard");
 });
 
 // IMAGE GALLERY ROUTE
 app.get("/image-gallery", function(req, res){
-    res.render("imagegallery");
+    res.render("projectpages/imagegallery");
 });
 
 // RAW APP ROUTE
 app.get("/raw-app", function(req, res){
-    res.render("rawapp");
+    res.render("projectpages/rawapp");
 });
 
 // GLASS CUP ROUTE
 app.get("/glass-cup", function(req, res){
-    res.render("glasscup");
+    res.render("projectpages/glasscup");
 });
 
 // BLOG ROUTE
 app.get("/blog", function(req, res){
-    res.render("blog");
+    res.render("blogpages/blog");
 });
 
 // MY TESTING STORY ROUTE
 app.get("/my-testing-story", function(req, res){
-    res.render("mytestingstory");
+    res.render("blogpages/mytestingstory");
 });
 
 // WHAT A PRODUCT OWNER WANTS FROM A JUNIOR TESTER ROUTE
 app.get("/what-a-product-owner-wants-from-a-junior-tester", function(req, res){
-    res.render("WAPOWFAJT");
+    res.render("blogpages/juniortester");
 });
 
 // RESOURCES ROUTE
 app.get("/resources", function(req, res){
-    res.render("resources");
+    res.render("other/resources");
 });
 
 // CONTACT ROUTE
 app.get("/contact", function(req, res){
-    res.render("contact");
+    res.render("other/contact");
 });
 
 // 500 ROUTE
 app.get("/500", function(req, res){
-    res.render("500");
+    res.render("errorpages/500");
 });
 
 // 404 ROUTE
@@ -160,7 +160,7 @@ app.use(function(req, res, next){
 
     // respond with html page
     if(req.accepts('html')) {
-        res.render('404', {error: 'The resource you where looking for is not available.'});
+        res.render('errorpages/404', {error: 'The resource you where looking for is not available.'});
         return;
     };
 
@@ -184,7 +184,7 @@ app.use(function(err, req, res, next){
 
     // respond with html page
     if(req.accepts('html')) {
-        res.render('500', {error: 'Something is broken on our end, email me at davidhaigh94@gmail.com if this issue persist.'});
+        res.render('errorpages/500', {error: 'Something is broken on our end, email me at davidhaigh94@gmail.com if this issue persist.'});
         return;
     }
 
