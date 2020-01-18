@@ -31,62 +31,62 @@ app.get("/home", function(req, res){
 
 // WORK ROUTE
 app.get("/work", function(req, res){
-    res.render("work");
+    res.render("workpages/work");
 });
 
 // QANTAS AIRLINE ROUTE
 app.get("/qantasairline", function(req, res){
-    res.render("qantasairline");
+    res.render("workpages/qantasairline");
 });
 
 // QANTAS LOYALTY ROUTE
 app.get("/qantasloyalty", function(req, res){
-    res.render("qantasloyalty");
+    res.render("workpages/qantasloyalty");
 });
 
 // LORICA HEALTH ROUTE
 app.get("/lorica-health", function(req, res){
-    res.render("loricahealth");
+    res.render("workpages/loricahealth");
 });
 
 // SUNCORP ROUTE
 app.get("/suncorp", function(req, res){
-    res.render("suncorp");
+    res.render("workpages/suncorp");
 });
 
 // WIRED2CLOUD ROUTE
 app.get("/wired2cloud", function(req, res){
-    res.render("wired2cloud");
+    res.render("workpages/wired2cloud");
 });
 
 // SIRC ROUTE
 app.get("/sirc", function(req, res){
-    res.render("sirc");
+    res.render("workpages/sirc");
 });
 
 // COVATA ROUTE
 app.get("/covata", function(req, res){
-    res.render("covata");
+    res.render("workpages/covata");
 });
 
 // CAREERVENTURES ROUTE
 app.get("/careerventures", function(req, res){
-    res.render("careerventures");
+    res.render("workpages/careerventures");
 });
 
 // AIE RUMBLE ACADEMY ROUTE
 app.get("/aie-rumble-academy", function(req, res){
-    res.render("aierumbleacademy");
+    res.render("workpages/aierumbleacademy");
 });
 
 // KARTEL DIGITAL ROUTE
 app.get("/kartel-digital", function(req, res){
-    res.render("karteldigital");
+    res.render("workpages/karteldigital");
 });
 
 // PLAY2LEAD ROUTE
 app.get("/play2lead", function(req, res){
-    res.render("play2lead");
+    res.render("workpages/play2lead");
 });
 
 // PROJECTS ROUTE
