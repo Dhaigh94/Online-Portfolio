@@ -151,7 +151,7 @@ app.get("/contact", function(req, res){
 
 // 500 ROUTE
 app.get("/500", function(req, res){
-    res.render("500");
+    res.render("errorpages/500");
 });
 
 // 404 ROUTE
@@ -160,7 +160,7 @@ app.use(function(req, res, next){
 
     // respond with html page
     if(req.accepts('html')) {
-        res.render('404', {error: 'The resource you where looking for is not available.'});
+        res.render('errorpages/404', {error: 'The resource you where looking for is not available.'});
         return;
     };
 
@@ -184,7 +184,7 @@ app.use(function(err, req, res, next){
 
     // respond with html page
     if(req.accepts('html')) {
-        res.render('500', {error: 'Something is broken on our end, email me at davidhaigh94@gmail.com if this issue persist.'});
+        res.render('errorpages/500', {error: 'Something is broken on our end, email me at davidhaigh94@gmail.com if this issue persist.'});
         return;
     }
 
