@@ -4,8 +4,8 @@
   "description": "Online Portfolio",
   "main": "server.js",
   "engines": {
-    "node": "13.1.0",
-    "npm": "6.12.1"
+    "node": "13.8.0",
+    "npm": "6.13.7"
   },
   "scripts": {
     "start": "npm install&&node server.js",
@@ -14,7 +14,12 @@
     "cypress:run": "cypress run",
     "cypress:chrome": "cypress run --browser chrome",
     "cypress:chromium": "cypress run --browser chromium",
-    "cypress:canary": "cypress run --browser canary",
+    "cypress:chromecanary": "cypress run --browser chrome:canary",
+    "cypress:edge": "cypress run --browser edge",
+    "cypress:edgecanary": "cypress run --browser edge:canary",
+    "cypress:firefox": "cypress run --browser firefox",
+    "cypress:firefoxdev": "cypress run --browser firefox:dev",
+    "cypress:firefoxnight": "cypress run --browser firefox:nightly",
     "percy:run": "percy exec -- cypress run"
   },
   "keywords": [
@@ -31,12 +36,12 @@
     "express-sanitizer": "^1.0.5",
     "jquery": "^3.4.1",
     "method-override": "^2.3.10",
-    "popper.js": "^1.16.0",
+    "popper.js": "^1.16.1",
     "x-frame-options": "^1.0.0"
   },
   "devDependencies": {
-    "@percy/cypress": "^2.2.0",
-    "cypress": "^3.8.1",
+    "@percy/cypress": "^2.3.0",
+    "cypress": "^4.0.1",
     "cypress-dark": "^1.7.14"
   }
 }
