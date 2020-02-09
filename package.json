@@ -4,8 +4,8 @@
   "description": "Online Portfolio",
   "main": "server.js",
   "engines": {
-    "node": "13.1.0",
-    "npm": "6.12.1"
+    "node": "13.8.0",
+    "npm": "6.13.7"
   },
   "scripts": {
     "start": "npm install&&node server.js",
