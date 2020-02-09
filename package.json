@@ -14,7 +14,12 @@
     "cypress:run": "cypress run",
     "cypress:chrome": "cypress run --browser chrome",
     "cypress:chromium": "cypress run --browser chromium",
-    "cypress:canary": "cypress run --browser canary",
+    "cypress:chromecanary": "cypress run --browser chrome:canary",
+    "cypress:edge": "cypress run --browser edge",
+    "cypress:edgecanary": "cypress run --browser edge:canary",
+    "cypress:firefox": "cypress run --browser firefox",
+    "cypress:firefoxdev": "cypress run --browser firefox:dev",
+    "cypress:firefoxnight": "cypress run --browser firefox:nightly",
     "percy:run": "percy exec -- cypress run"
   },
   "keywords": [
