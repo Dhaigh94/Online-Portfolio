@@ -31,12 +31,12 @@
     "express-sanitizer": "^1.0.5",
     "jquery": "^3.4.1",
     "method-override": "^2.3.10",
-    "popper.js": "^1.16.0",
+    "popper.js": "^1.16.1",
     "x-frame-options": "^1.0.0"
   },
   "devDependencies": {
-    "@percy/cypress": "^2.2.0",
-    "cypress": "^3.8.1",
+    "@percy/cypress": "^2.3.0",
+    "cypress": "^4.0.1",
     "cypress-dark": "^1.7.14"
   }
 }
