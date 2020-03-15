@@ -106,7 +106,7 @@ footer {
   }
   
   footer a:hover {
-    color: #00b3ff;
+    color: #00FFFF;
     text-decoration: none;
   }
   
@@ -154,15 +154,15 @@ footer {
   }
 
   .social-network a.icoInstagram:hover {
-    background-color: #fd45bd;
+    background-color: #f24b5a;
   }
 
   .social-network a.icoGithub:hover {
-    background-color: #c753ff;
+    background-color: #FF00FF;
   }
 
   .social-network a.icoYoutube:hover {
-    background-color: #00FF00;
+    background-color: #DAA520;
   }
   
   .social-network a.icoFacebook:hover i,
