@@ -3,6 +3,7 @@ orbs:
   node: circleci/node@1.1.6
   cypress: cypress-io/cypress@1.19.1
 jobs:
+  - cypress/run
   Portfolio-Run:
     executor:
       name: node/default
