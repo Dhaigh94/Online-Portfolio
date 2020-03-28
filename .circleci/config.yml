@@ -8,6 +8,8 @@ jobs:
   Portfolio-Run:
     steps:
       - checkout
+      machine:
+        enabled: true
       - node/with-cache:
         - run: npm install
         - run: npm run cypress:run
