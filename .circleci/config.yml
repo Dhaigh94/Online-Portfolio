@@ -1,12 +1,13 @@
 version: 2.1
-orbs:
-  cypress: cypress-io/cypress@1.19.1
-  percy: percy/agent@0.1.2
 jobs:
   Portfolio-Run:
     build:
       docker:
         - image: davedevil/online-portfolio:latest
+        cypress:
+          - image: cypress-io/cypress@1.19.1
+          percy:
+            - image: percy/agent@0.1.2
     steps:
       - checkout
       - node/with-cache:
