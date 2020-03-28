@@ -6,23 +6,10 @@ orbs:
   percy: percy/agent@0.1.2
 jobs:
   Portfolio-Run:
-    executor:
-      name: node/default
     steps:
-      - setup_remote_docker
       - checkout
-      - docker/check
-      - docker/build:
-          image: davedevil/online-portfolio:latest
-      - docker/push:
-          digest-path: /tmp/digest.txt
-          image: davedevil/online-portfolio:latest
-      steps:
-          - run:
-            command: |
-              echo "Digest is: $(</tmp/digest.txt)"
-            - run: npm install
-            - run: npm run cypress:run
+        - run: npm install
+        - run: npm run cypress:run
 workflows:
     Porffolio-Run:
       jobs:
