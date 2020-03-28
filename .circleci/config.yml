@@ -11,7 +11,7 @@ jobs:
       machine:
         enabled: true
       - node/with-cache:
-        - run: npm install
+        - run: npm start & wait-on http://localhost:8080
         - run: npm run cypress:run
 workflows:
     Porffolio-Run:
