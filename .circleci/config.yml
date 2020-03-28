@@ -4,7 +4,7 @@ orbs:
 jobs:
   build:
     docker:
-      - image: davedevil/online-portfolio:0.0.1
+      - image: davedevil/online-portfolio:latest...
   Portfolio-Run:
     executor:
       name: node/default
@@ -17,7 +17,6 @@ jobs:
               command: |
                 echo $PERCY_TOKEN
             - run: npm install
-            - run: npm run docker:run
             - run: npm run percy:run
 workflows:
     Porffolio-Run:
