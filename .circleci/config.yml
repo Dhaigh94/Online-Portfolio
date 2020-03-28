@@ -15,7 +15,7 @@ jobs:
             - run: 
               name: "Percy"
               command: |
-                echo $PERCY_TOKEN
+                echo PERCY_TOKEN\$
             - run: npm install
             - run: npm run percy:run
 workflows:
