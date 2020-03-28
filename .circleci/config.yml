@@ -1,12 +1,13 @@
 version: 2.1
+orbs:
+  node: circleci/node@1.1.6
+  cypress: cypress-io/cypress@1.16.1
+  docker: davedevil/online-portfolio:latest
+  percy: percy/agent@0.1.2
 jobs:
   Portfolio-Run:
-      docker:
-        - image: davedevil/online-portfolio:latest
-        cypress:
-          - image: cypress-io/cypress@1.19.1
-          percy:
-            - image: percy/agent@0.1.2
+    executor:
+      name: node/default
     steps:
       - checkout
       - node/with-cache:
@@ -14,7 +15,6 @@ jobs:
             - run: npm install
             - run: npm run cypress:run
 workflows:
-    build:
     Porffolio-Run:
       jobs:
         - Portfolio-Run
