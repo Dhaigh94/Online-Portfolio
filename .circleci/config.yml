@@ -2,6 +2,9 @@ version: 2.1
 orbs:
   node: circleci/node@1.1.6
 jobs:
+  build:
+    docker:
+      - image: davedevil/online-portfolio:0.0.1
   Portfolio-Run:
     executor:
       name: node/default
@@ -9,10 +12,11 @@ jobs:
       - checkout
       - node/with-cache:
           steps:
+            - run: 
+              name: "Percy"
+              command: |
+                echo $PERCY_TOKEN
             - run: npm install
-            - run: npm run docker:build
-            - run: npm run docker:run
-            - run: PERCY_TOKEN=9ab2ef6b86ac947038d82c2673f4924771bc3751ba2bdb572ed2bbe9ecd7c69f
             - run: npm run percy:run
 workflows:
     Porffolio-Run:
