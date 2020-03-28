@@ -17,6 +17,7 @@ jobs:
       - docker/push:
           digest-path: /tmp/digest.txt
           image: davedevil/online-portfolio:latest
+      steps:
           - run:
             command: |
               echo "Digest is: $(</tmp/digest.txt)"
