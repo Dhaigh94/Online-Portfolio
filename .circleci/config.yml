@@ -17,7 +17,7 @@ jobs:
               command: |
                 echo $PERCY_TOKEN
             - run: npm install
-            - run: docker run davedevil/online-portfolio:0.0.1
+            - run: npm run docker:run
             - run: npm run percy:run
 workflows:
     Porffolio-Run:
