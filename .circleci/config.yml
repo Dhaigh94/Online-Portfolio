@@ -3,11 +3,11 @@ jobs:
   Portfolio-Run:
     build:
       docker:
-        - image: davedevil/online-portfolio:latest
+        image: davedevil/online-portfolio:latest
         cypress:
-          - image: cypress-io/cypress@1.19.1
+          image: cypress-io/cypress@1.19.1
           percy:
-            - image: percy/agent@0.1.2
+            image: percy/agent@0.1.2
     steps:
       - checkout
       - node/with-cache:
