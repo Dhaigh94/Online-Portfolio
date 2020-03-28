@@ -10,8 +10,7 @@ jobs:
       - node/with-cache:
           steps:
             - run: npm install
-            - run: npm run docker:build
-            - run: npm run docker:run
+            - run: npm run local
             - run: export PERCY_TOKEN=9ab2ef6b86ac947038d82c2673f4924771bc3751ba2bdb572ed2bbe9ecd7c69f
             - run: npm run percy:run
 workflows:
