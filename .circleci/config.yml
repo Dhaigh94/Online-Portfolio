@@ -1,17 +1,25 @@
 version: 2.1
 orbs:
   node: circleci/node@1.1.6
+  docker: circleci/docker@1.0.0
   cypress: cypress-io/cypress@1.16.1
-  docker: davedevil/online-portfolio:latest
   percy: percy/agent@0.1.2
 jobs:
   Portfolio-Run:
     executor:
       name: node/default
     steps:
+      - setup_remote_docker
       - checkout
-      - node/with-cache:
-          steps:
+      - docker/check
+      - docker/build:
+          image: davedevil/online-portfolio:latest
+      - docker/push:
+          digest-path: /tmp/digest.txt
+          image: davedevil/online-portfolio:latest
+          - run:
+            command: |
+              echo "Digest is: $(</tmp/digest.txt)"
             - run: npm install
             - run: npm run cypress:run
 workflows:
