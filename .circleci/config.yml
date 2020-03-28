@@ -6,6 +6,8 @@ orbs:
   percy: percy/agent@0.1.2
 jobs:
   Portfolio-Run:
+  executor:
+      name: node/default
     steps:
       - checkout
       - node/with-cache:
