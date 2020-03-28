@@ -1,0 +1,18 @@
+web:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: kinto:build
+    depends_on:
+    ports:
+      - "8080:8080"
+    command: start
+  
+  tests:
+   build:
+     context: .
+     dockerfile: tests/Dockerfile
+   image: kinto:tests
+   depends_on:
+     - web
+   command: test
