@@ -2,14 +2,6 @@ version: 2.1
 orbs:
   node: circleci/node@1.1.6
   cypress: cypress-io/cypress@1.19.1
-  agent: percy/agent@0.1.3
-  
-commands:
-    parameters:
-      percy_token:
-        description: To run snapshot tests.
-        type: string
-        default: $PERCY_TOKEN
 jobs:
   Portfolio-Run:
     executor:
@@ -19,7 +11,7 @@ jobs:
       - node/with-cache:
           steps:
             - run: npm install
-            - run: npm run percy:run
+            - run: npm run cypress:run
 workflows:
     Porffolio-Run:
       jobs:
