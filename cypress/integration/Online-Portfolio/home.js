@@ -1,7 +1,7 @@
 describe('Portfolio Home Page Tests', () => {
     beforeEach(function() {
         cy.visit('/')
-        cy.url().should('include', 'http://localhost:8080')
+        cy.url().should('include', 'https://davidhaighportfoliodev.herokuapp.com')
         cy.title().should('eq', "David's Portfolio")
     })
 

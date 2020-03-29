@@ -2,7 +2,7 @@ describe('Portfolio Navbar Tests for iPad Portrait', () => {
     beforeEach(function() {
         cy.viewport('ipad-2')
         cy.visit('/')
-        cy.url().should('include', 'http://localhost:8080')
+        cy.url().should('include', 'https://davidhaighportfoliodev.herokuapp.com')
         cy.title().should('eq', "David's Portfolio")
     })
 
