@@ -4,6 +4,16 @@ orbs:
   docker: circleci/docker@1.0.0
   cypress: cypress-io/cypress@1.16.1
   percy: percy/agent@0.1.2
+commands:
+    finalize_all:
+      description: Finalize all Percy builds
+      parameters:
+        percy_token:
+          description: Adding PERCY_TOKEN to the build.
+          type: string
+          default: $PERCY_TOKEN
+      steps:
+        - run: PERCY_TOKEN=<< parameters.percy_token >> percy finalize --all
 jobs:
   Portfolio-Run:
   executor:
@@ -14,8 +24,12 @@ jobs:
       steps:
         - run: npm install
         - run: npm start & wait-on http://localhost:8080
-        - run: npm run cypress:run
+        - run: npm run percy:run
 workflows:
-    Porffolio-Run:
+  finalize_all:
+    executor: default
+    steps:
+      - finalize_all
+    Portfolio-Run:
       jobs:
         - Portfolio-Run
