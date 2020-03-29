@@ -8,7 +8,7 @@ orbs:
     build:
       jobs:
         - cypress/run:
-            executor: cypress/browsers-chrome80
+            executor: cypress/browsers-chrome73-ff68
             browser: chrome
 jobs:
   Portfolio-Tests:
