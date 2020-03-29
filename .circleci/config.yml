@@ -1,7 +1,6 @@
 version: 2.1
 orbs:
   node: circleci/node@1.1.6
-  docker: circleci/docker@1.0.0
   cypress: cypress-io/cypress@1.16.1
   percy: percy/agent@0.1.2
 commands:
