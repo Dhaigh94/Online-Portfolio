@@ -5,6 +5,8 @@ orbs:
   percy: percy/agent@0.1.2
 jobs:
   build-and-test:
+    environment:
+      NODE_ENV: development
     executor:
       name: node/default
     steps:
