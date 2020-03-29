@@ -22,6 +22,6 @@ jobs:
 workflows:
     build-and-test:
       jobs:
-        - build-and-test
-        executor: cypress/browsers-chrome69
+        - build-and-test:
+        executor: cypress/browsers-chrome80
           browser: chrome
