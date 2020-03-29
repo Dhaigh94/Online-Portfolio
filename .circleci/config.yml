@@ -5,9 +5,7 @@ orbs:
   percy: percy/agent@0.1.2
   puppeteer: threetreeslight/puppeteer@0.1.2
 jobs:
-  build-and-test:
-    executor: cypress/browsers-chrome80
-    browser: chrome
+  Portfolio-Tests:
     docker:
       - image: circleci/node:13 # Use your desired version
         environment:
@@ -22,6 +20,8 @@ jobs:
             - run: npm install
             - run: npm run percy:run
 workflows:
-    build-and-test:
+    build:
       jobs:
-        - build-and-test
+        - Portfolio-Tests:
+          executor: cypress/browsers-chrome80
+          browser: chrome
