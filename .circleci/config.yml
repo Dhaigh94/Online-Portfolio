@@ -27,9 +27,7 @@ jobs:
         - run: npm run percy:run
 workflows:
   finalize_all:
-    executor: default
-    steps:
-      - finalize_all
-    Portfolio-Run:
+  Portfolio-Run:
       jobs:
         - Portfolio-Run
+        - finalize_all
