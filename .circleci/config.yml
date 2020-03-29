@@ -5,9 +5,10 @@ orbs:
   workflows:
     build:
       jobs:
-        - Portfolio-Tests:
+        - cypress/run:
             executor: cypress/browsers-chrome73-ff68
             browser: chrome
 workflows:
+  cypress/run:
       jobs:
-        - Portfolio-Tests
+        - cypress/run
