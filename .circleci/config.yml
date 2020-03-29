@@ -4,7 +4,6 @@ orbs:
   cypress: cypress-io/cypress@1.16.1
   percy: percy/agent@0.1.2
   puppeteer: threetreeslight/puppeteer@0.1.2
-  browser-tools: circleci/browser-tools@0.1.4
 jobs:
   build-and-test:
     docker:
@@ -19,8 +18,10 @@ jobs:
           steps:
             - run: export PERCY_TOKEN=9ab2ef6b86ac947038d82c2673f4924771bc3751ba2bdb572ed2bbe9ecd7c69f
             - run: npm install
-            - run: npm run cypress:run
+            - run: npm run percy:run
 workflows:
     build-and-test:
       jobs:
         - build-and-test
+        executor: cypress/browsers-chrome69
+          browser: chrome
