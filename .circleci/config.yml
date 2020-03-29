@@ -1,0 +1,14 @@
+version: 2.1
+orbs:
+  node: circleci/node@1.1.6
+  cypress: cypress-io/cypress@1.16.1
+  workflows:
+    build:
+      jobs:
+        - cypress/run:
+            executor: cypress/browsers-chrome73-ff68
+            browser: chrome
+workflows:
+  Portfolio-Tests:
+      jobs:
+        - cypress/run

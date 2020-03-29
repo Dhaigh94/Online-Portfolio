@@ -2,14 +2,13 @@ describe('Portfolio Navbar Tests for iPad Landscape', () => {
     beforeEach(function() {
         cy.viewport('ipad-2', 'landscape')
         cy.visit('/')
-        cy.url().should('include', 'http://localhost:8080')
+        cy.url().should('include', 'https://davidhaighportfoliodev.herokuapp.com')
         cy.title().should('eq', "David's Portfolio")
     })
 
     it('Check that the Work link on the Navbar goes to the Work page', function() {
         cy.get('[data-cy=Work]').click()
         cy.url().should('include', '/work')
-        cy.percySnapshot('WorkiPadlandscape')
     })
 
     it('Check that the Home link on the Navbar goes to the Home page by clicking it from a another page', function() {
@@ -22,25 +21,21 @@ describe('Portfolio Navbar Tests for iPad Landscape', () => {
     it('Check that the Projects link on the Navbar goes to the Projects page', function() {
         cy.get('[data-cy=Projects]').click()
         cy.url().should('include', '/projects')
-        cy.percySnapshot('ProjectsiPadlandscape')
     })
 
     it('Check that the Blog link on the Navbar goes to the Blog page', function() {
         cy.get('[data-cy=Blog]').click()
         cy.url().should('include', '/blog')
-        cy.percySnapshot('BlogiPadlandscape')
     })
 
     it('Check that the Resources link on the Navbar goes to the Resources page', function() {
         cy.get('[data-cy=Resources]').click()
         cy.url().should('include', '/resources')
         cy.get('[data-cy=resourcesslideshow]').should('be.visible')
-        cy.percySnapshot('ResourcesiPadlandscape')
     })
 
     it('Check that the Contact link on the Navbar goes to the Contact page', function() {
         cy.get('[data-cy=Contact]').click()
         cy.url().should('include', '/contact')
-        cy.percySnapshot('ContactiPadlandscape')
     })
 })
