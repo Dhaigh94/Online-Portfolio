@@ -9,6 +9,5 @@ orbs:
             executor: cypress/browsers-chrome73-ff68
             browser: chrome
 workflows:
-  Portfolio-Tests:
       jobs:
         - Portfolio-Tests
