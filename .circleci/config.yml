@@ -19,6 +19,8 @@ jobs:
     machine:
       image: ubuntu-1604:201903-01
       docker_layer_caching: true
+      steps:
+        - checkout
   Portfolio-Run:
     steps:
       - checkout
@@ -30,4 +32,6 @@ workflows:
   Portfolio-Run:
       jobs:
         - Add_Percy_Token
-        - Portfolio-Run
+        - Portfolio-Run:
+          requires:
+            - build
