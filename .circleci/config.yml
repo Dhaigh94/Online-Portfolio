@@ -5,7 +5,7 @@ orbs:
   cypress: cypress-io/cypress@1.16.1
   percy: percy/agent@0.1.2
 commands:
-    finalize_all:
+    Add_Percy_Token:
       description: Finalize all Percy builds
       parameters:
         percy_token:
@@ -18,14 +18,12 @@ jobs:
   Portfolio-Run:
     steps:
       - checkout
-      - node/with-cache:
-      steps:
-        - run: npm install
-        - run: npm start & wait-on http://localhost:8080
-        - run: npm run percy:run
+      - run: npm install
+      - run: npm start & wait-on http://localhost:8080
+      - run: npm run percy:run
 workflows:
-  finalize_all:
+  Add_Percy_Token:
   Portfolio-Run:
       jobs:
+        - Add_Percy_Token
         - Portfolio-Run
-        - finalize_all
