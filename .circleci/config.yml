@@ -16,8 +16,6 @@ commands:
         - run: PERCY_TOKEN=<< parameters.percy_token >> percy finalize --all
 jobs:
   Portfolio-Run:
-  executor:
-      name: node/default
     steps:
       - checkout
       - node/with-cache:
