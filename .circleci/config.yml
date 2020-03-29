@@ -6,10 +6,12 @@ orbs:
   puppeteer: threetreeslight/puppeteer@0.1.2
 jobs:
   Portfolio-Tests:
+    browser: chrome
     docker:
       - image: circleci/node:13 # Use your desired version
         environment:
           NODE_ENV: development # Only needed if puppeteer is in `devDependencies`
+          executor: cypress/browsers-chrome80
     steps:
       - checkout
       - node/with-cache:
@@ -19,8 +21,5 @@ jobs:
             - run: npm run percy:run
 workflows:
   Portfolio-Tests:
-    build:
       jobs:
-        - Portfolio-Tests:
-          executor: cypress/browsers-chrome80
-          browser: chrome
+        - Portfolio-Tests
