@@ -24,6 +24,8 @@ jobs:
             - run: npm install
             - run: npm run percy:run
 workflows:
+  cypress/run:
   Portfolio-Tests:
       jobs:
+        - cypress/run
         - Portfolio-Tests
