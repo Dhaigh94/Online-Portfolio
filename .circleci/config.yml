@@ -1,15 +1,15 @@
 version: 2.1
 orbs:
-  node: circleci/node:13
+  node: circleci/node@1.1.6
   cypress: cypress-io/cypress@1.16.1
   percy: percy/agent@0.1.2
   puppeteer: threetreeslight/puppeteer@0.1.2
 jobs:
   Portfolio-Tests:
+    docker:
+      - image: circleci/node:13 # Use your desired version
         environment:
           NODE_ENV: development # Only needed if puppeteer is in `devDependencies`
-     executor: cypress/browsers-chrome80
-     browser: chrome
     steps:
       - checkout
       - node/with-cache:
@@ -19,5 +19,8 @@ jobs:
             - run: npm run percy:run
 workflows:
   Portfolio-Tests:
+    build:
       jobs:
-        - Portfolio-Tests
+        - Portfolio-Tests:
+          executor: cypress/browsers-chrome80
+          browser: chrome
