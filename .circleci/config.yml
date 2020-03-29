@@ -1,7 +1,6 @@
 version: 2.1
 orbs:
   node: circleci/node@1.1.6
-  docker: circleci/docker@1.0.0
   cypress: cypress-io/cypress@1.16.1
   percy: percy/agent@0.1.2
 commands:
@@ -15,23 +14,18 @@ commands:
       steps:
         - run: PERCY_TOKEN=<< parameters.percy_token >> percy finalize --all
 jobs:
-  build:
-    machine:
-      image: ubuntu-1604:201903-01
-      docker_layer_caching: true
-      steps:
-        - checkout
   Portfolio-Run:
+    executor:
+      name: node/default
     steps:
-      - checkout
-      - run: npm install
-      - run: npm start & wait-on http://localhost:8080
+    - checkout
+    - node/with-cache:
+    steps:
+      - run: npm run start & wait-on http://localhost:8080
       - run: npm run percy:run
 workflows:
   Add_Percy_Token:
   Portfolio-Run:
       jobs:
         - Add_Percy_Token
-        - Portfolio-Run:
-          requires:
-            - build
+        - Portfolio-Run
