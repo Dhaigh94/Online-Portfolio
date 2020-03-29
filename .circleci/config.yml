@@ -1,6 +1,7 @@
 version: 2.1
 orbs:
   node: circleci/node@1.1.6
+  docker: circleci/docker@1.0.0
   cypress: cypress-io/cypress@1.16.1
   percy: percy/agent@0.1.2
 commands:
@@ -14,6 +15,9 @@ commands:
       steps:
         - run: PERCY_TOKEN=<< parameters.percy_token >> percy finalize --all
 jobs:
+  build:
+    docker:
+      - image: circleci/node:9.9.0
   Portfolio-Run:
     steps:
       - checkout
