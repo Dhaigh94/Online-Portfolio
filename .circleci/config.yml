@@ -2,10 +2,6 @@ version: 2.1
 orbs:
   node: circleci/node@1.1.6
   cypress: cypress-io/cypress@1.16.1
-  executors:
-    with-chrome:
-      docker:
-        - image: 'cypress/browsers:chrome80'
   workflows:
     build:
       jobs:
@@ -14,7 +10,7 @@ orbs:
         - cypress/run:
           requires:
             - cypress/install
-            executor: with-chrome
+            executor: cypress/browsers-chrome80
             post-steps:
               - store_test_results:
                   - cypress/install
