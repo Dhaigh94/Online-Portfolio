@@ -18,6 +18,7 @@ orbs:
           path: cypress/results
 workflows:
   Portfolio-Tests:
+  post-steps:
       jobs:
         - cypress/run
         - store_test_results
