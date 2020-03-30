@@ -44,13 +44,10 @@ orbs:
               paths:
               - project
               - .cache/Cypress
-          - Running localhost:
-            name: Run App
-            command: npm start & wait-on http://localhost:8080
           - run:
               name: Run Cypress tests
               no_output_timeout: 10m
-              command: "npx cypress run \\\n   \\\n   \\\n   \\\n  "
+              command: "npm start&&npx cypress run \\\n   \\\n   \\\n   \\\n  "
               working_directory: ''
 workflows:
   Portfolio-Tests:
