@@ -18,4 +18,5 @@ orbs:
 workflows:
   Portfolio-Tests:
       jobs:
+        - cypress/install
         - cypress/run
