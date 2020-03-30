@@ -8,8 +8,6 @@ orbs:
         - cypress/install:
           build: npm run start
         - cypress/run:
-          requires:
-            - cypress/install
             executor: cypress/browsers-chrome80
             browser: chrome
             post-steps:
