@@ -5,12 +5,16 @@ orbs:
   workflows:
     build:
       jobs:
+        - cypress/install:
+          build: npm run start
         - cypress/run:
-            install-command: npm install
-            start: npm start
-            wait-on: 'http://localhost:8080'
+          requires:
+            - cypress/install
             executor: cypress/browsers-chrome73-ff68
             browser: chrome
+            post-steps:
+              - store_test_results:
+                  path: cypress/results
 workflows:
   Portfolio-Tests:
       jobs:
