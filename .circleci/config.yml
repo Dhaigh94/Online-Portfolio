@@ -13,5 +13,4 @@ orbs:
 workflows:
   Portfolio-Tests:
       jobs:
-        - ssh/tunnel
         - cypress/run
