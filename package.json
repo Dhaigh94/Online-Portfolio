@@ -9,7 +9,7 @@
   },
   "scripts": {
     "start": "npm install&&node server.js",
-    "build": "node server.js",
+    "local": "node server.js",
     "docker:build": "docker build -t online-portfolio . ",
     "docker:run": "docker run -p 8080:8080 online-portfolio",
     "cypress:open": "cypress open",
