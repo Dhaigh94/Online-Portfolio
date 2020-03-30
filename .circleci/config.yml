@@ -44,7 +44,7 @@ orbs:
               paths:
               - project
               - .cache/Cypress
-          - run:
+          - Running localhost:
             name: Run App
             command: npm start & wait-on http://localhost:8080
           - run:
