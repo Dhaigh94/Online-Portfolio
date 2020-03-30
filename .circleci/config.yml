@@ -2,15 +2,57 @@ version: 2.1
 orbs:
   node: circleci/node@1.1.6
   cypress: cypress-io/cypress@1.16.1
-jobs:
-  Portfolio-Tests:
-  steps:
-    - run: 'npm start & wait-on http://localhost:8080'
-    - cypress/run:
-      executor: cypress/browsers-chrome73-ff68
-      browser: chrome
+  workflows:
+    build:
+      jobs:
+        cypress/run:
+          docker:
+          - image: cypress/base:10
+          parallelism: 1
+          environment:
+          - CYPRESS_CACHE_FOLDER: ~/.cache/Cypress
+          steps:
+          - checkout
+          - restore_cache:
+              keys:
+              - cache-{{ arch }}-{{ .Branch }}-{{ checksum "package.json" }}
+          - run:
+              name: Check if package-lock.json exists
+              command: |
+                if [ ! -e ./package-lock.json ]; then
+                  echo "The Cypress orb uses 'npm ci' to install 'node_modules', which requires a 'package-lock.json'."
+                  echo "A 'package-lock.json' file was not found. Please run 'npm install' in your project,"
+                  echo "and commit 'package-lock.json' to your repo."
+                  exit 1
+                fi
+              working_directory: ''
+          - run:
+              name: Npm CI
+              command: npm ci
+              working_directory: ''
+          - run:
+              name: Verify Cypress
+              command: npx cypress verify
+              working_directory: ''
+          - save_cache:
+              key: cache-{{ arch }}-{{ .Branch }}-{{ checksum "package.json" }}
+              paths:
+              - ~/.npm
+              - ~/.cache
+          - persist_to_workspace:
+              root: ~/
+              paths:
+              - project
+              - .cache/Cypress
+          - run:
+            name: Run App
+            command: npm start & wait-on http://localhost:8080
+          - run:
+              name: Run Cypress tests
+              no_output_timeout: 10m
+              command: "npx cypress run \\\n   \\\n   \\\n   \\\n  "
+              working_directory: ''
 workflows:
   Portfolio-Tests:
-    jobs:
-      - Portfolio-Tests
-      - cypress/run
+      jobs:
+        - cypress/run
