@@ -18,8 +18,6 @@ app.use('/js', express.static(__dirname + '/node_modules/jquery/dist')); // redi
 app.use('/css', express.static(__dirname + '/node_modules/bootstrap/dist/css')); // redirect CSS bootstrap
 app.use(secure);
 
-const LOCAL = 8080;
-
 // RESTFUL ROUTES
 app.get("/", function(req, res){
     res.get('X-Frame-Options') === ('Deny');
@@ -194,6 +192,6 @@ app.use(function(err, req, res, next){
     res.type('txt').send('Something is broken on our end, email me at davidhaigh94@gmail.com if this issue persist.');
 });
 
-app.listen(process.env.PORT || LOCAL, process.env.IP, function(){
-    console.log(`PORTFOLIO IS RUNNING! go to http://localhost:${LOCAL}"`);
+app.listen(process.env.PORT || 8080, process.env.IP, function(){
+    console.log(`PORTFOLIO IS RUNNING! go to http://localhost:8080`);
 });
