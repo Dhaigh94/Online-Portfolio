@@ -8,11 +8,10 @@ orbs:
         - cypress/install:
           build: npm run start
         - cypress/run:
-            executor: cypress/browsers-chrome80
+            executor: cypress/browsers-chrome78-ff70
             browser: chrome
             post-steps:
               - store_test_results:
-                  - cypress/install
                   path: cypress/results
 workflows:
   Portfolio-Tests:
