@@ -2,19 +2,22 @@ version: 2.1
 orbs:
   node: circleci/node@1.1.6
   cypress: cypress-io/cypress@1.16.1
+  executors:
+    with-chrome:
+      docker:
+        - image: 'cypress/browsers-chrome78-ff70'
   workflows:
     build:
       jobs:
-        - cypress/install:
-          build: npm run start
         - cypress/run:
-            executor: cypress/browsers-chrome78-ff70
-            browser: chrome
-            post-steps:
-              - store_test_results:
-                  path: cypress/results
+          build: npm run start
+          wait-on: 'http://localhost:8080'
+          executor: with-chrome
+          post-steps:
+        - store_test_results:
+          path: cypress/results
 workflows:
   Portfolio-Tests:
       jobs:
-        - cypress/install
         - cypress/run
+        - store_test_results
