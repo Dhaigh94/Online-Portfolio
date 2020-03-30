@@ -11,6 +11,7 @@ orbs:
           requires:
             - cypress/install
             executor: cypress/browsers-chrome80
+            browser: chrome
             post-steps:
               - store_test_results:
                   - cypress/install
