@@ -2,17 +2,15 @@ version: 2.1
 orbs:
   node: circleci/node@1.1.6
   cypress: cypress-io/cypress@1.16.1
-  workflows:
-    build:
-      jobs:
-        - run-server:
-        steps:
-          run: npm start & wait-on http://localhost:8080   
-        - cypress/run:
-          executor: cypress/browsers-chrome73-ff68
-          browser: chrome
+jobs:
+  Portfolio-Tests:
+  steps:
+    - run: 'npm start & wait-on http://localhost:8080'
+    - cypress/run:
+      executor: cypress/browsers-chrome73-ff68
+      browser: chrome
 workflows:
   Portfolio-Tests:
-      jobs:
-        - run-server
-        - cypress/run
+    jobs:
+      - Portfolio-Tests
+      - cypress/run
