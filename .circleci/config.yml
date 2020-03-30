@@ -5,9 +5,9 @@ orbs:
   workflows:
     build:
       jobs:
-        run-server:
+        - run-server:
         steps:
-        - run: npm start & wait-on http://localhost:8080   
+          run: npm start & wait-on http://localhost:8080   
         - cypress/run:
           executor: cypress/browsers-chrome73-ff68
           browser: chrome
