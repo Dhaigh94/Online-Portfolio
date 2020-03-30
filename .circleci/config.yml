@@ -6,6 +6,9 @@ orbs:
     build:
       jobs:
         - cypress/run:
+            install-command: npm install
+            start: npm start
+            wait-on: 'http://localhost:8080'
             executor: cypress/browsers-chrome73-ff68
             browser: chrome
 workflows:

@@ -1,5 +1,5 @@
 {
-    "baseUrl": "https://davidhaighportfoliodev.herokuapp.com/",
+    "baseUrl": "http://localhost:8080",
     "defaultCommandTimeout": 10000,
     "execTimeout": 60000,
     "taskTimeout": 60000,
