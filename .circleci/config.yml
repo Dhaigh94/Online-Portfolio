@@ -13,12 +13,7 @@ orbs:
           build: npm run start
           wait-on: 'http://localhost:8080'
           executor: with-chrome
-          post-steps:
-        - store_test_results:
-          path: cypress/results
 workflows:
   Portfolio-Tests:
-  post-steps:
       jobs:
         - cypress/run
-        - store_test_results
