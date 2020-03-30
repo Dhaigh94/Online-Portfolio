@@ -2,19 +2,12 @@ version: 2.1
 orbs:
   node: circleci/node@1.1.6
   cypress: cypress-io/cypress@1.16.1
-  ssh: lansweeper/ssh@0.0.3
   workflows:
     build:
       jobs:
-        - ssh/tunnel:
-          local_port: '8080'
-          target_host: targethost.com
-          target_port: '8080'
-          bastion_user: ubuntu
-          bastion_host: bastionhost.com
-          options: 'ConnectTimeout=60,Port=22'
-        - run: 'curl localhost:8080'
         - cypress/run:
+          start: npm startci
+          wait-on: 'http://localhost:8080'
           executor: cypress/browsers-chrome78-ff70
           browser: chrome
 workflows:

@@ -9,6 +9,7 @@
   },
   "scripts": {
     "start": "npm install&&node server.js",
+    "startci": "my-server -p 8080",
     "local": "node server.js",
     "docker:build": "docker build -t online-portfolio . ",
     "docker:run": "docker run -p 8080:8080 online-portfolio",
