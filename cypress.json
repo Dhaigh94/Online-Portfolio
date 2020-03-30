@@ -1,5 +1,5 @@
 {
-    "baseUrl": "https://davidhaighportfoliodev.herokuapp.com/",
+    "baseUrl": "https://davidhaighportfoliodev.herokuapp.com",
     "defaultCommandTimeout": 10000,
     "execTimeout": 60000,
     "taskTimeout": 60000,
