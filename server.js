@@ -18,8 +18,6 @@ app.use('/js', express.static(__dirname + '/node_modules/jquery/dist')); // redi
 app.use('/css', express.static(__dirname + '/node_modules/bootstrap/dist/css')); // redirect CSS bootstrap
 app.use(secure);
 
-const LOCAL = 8080;
-
 // RESTFUL ROUTES
 app.get("/", function(req, res){
     res.get('X-Frame-Options') === ('Deny');
