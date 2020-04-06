@@ -4,7 +4,7 @@ jobs:
       docker:
         - image: circleci/node
       machine: true
-   steps:
+    steps:
      - checkout
      # build the application image
      - run: npm run docker:build
@@ -13,9 +13,9 @@ jobs:
     runningcypress:
       docker:
         - image: cypress/browsers
-        steps:
-        - checkout
-        - run: npm run cypress:run
+    steps:
+     - checkout
+     - run: npm run cypress:run
 workflows:
   version: 2.1
   Portfolio-Tests:
