@@ -14,7 +14,7 @@ orbs:
               jobs:
                 - cypress/run:
 workflows:
-  Portfolio-Tests:
+  build-docker-image-only:
       jobs:
         - check-and-build-only
         - cypress/run
