@@ -13,7 +13,7 @@ jobs:
       - image: cypress/browsers
     steps:
       - checkout
-      - run: cypress install
+      - run: npm install
       - run: npm run cypress:run
 workflows:
   version: 2.1
