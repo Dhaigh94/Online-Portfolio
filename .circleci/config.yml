@@ -10,15 +10,15 @@ orbs:
               image: circleci/node
               name: docker/docker
               tag: boron-browsers
-            image: my/image
+            image: davedevil/online-portfolio
             remote-docker-dlc: true
-            tag: my-tag
+            tag: latest
             use-remote-docker: true
-            build:
+            runcypress:
               jobs:
                 - cypress/run:
 workflows:
   Portfolio-Tests:
       jobs:
-        - build-and-publish-docker-image
+        - docker/publish
         - cypress/run
