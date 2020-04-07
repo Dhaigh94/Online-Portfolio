@@ -3,22 +3,18 @@ orbs:
   docker: circleci/docker@1.0.1
   cypress: cypress-io/cypress@1.16.1
   workflows:
-    build-and-publish-docker-image:
-      jobs:
-        - docker/publish:
-            executor:
-              image: circleci/node
-              name: docker/docker
-              tag: boron-browsers
-            image: davedevil/online-portfolio:latest
-            remote-docker-dlc: true
-            tag: circleci
-            use-remote-docker: true
+    check-and-build-only:
+      executor: docker/machine
+      steps:
+        - checkout
+        - docker/check
+        - docker/build:
+            image: $CIRCLE_PROJECT_USERNAME/$CIRCLE_PROJECT_REPONAME
             runcypress:
               jobs:
                 - cypress/run:
 workflows:
   Portfolio-Tests:
       jobs:
-        - docker/publish
+        - check-and-build-only
         - cypress/run
