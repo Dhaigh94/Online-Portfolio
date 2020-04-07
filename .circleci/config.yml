@@ -1,24 +1,25 @@
 version: 2.1
-jobs:
-    runningdocker:
-      docker:
-        - image: circleci/node
-      machine: true
-    steps:
-     - checkout
-     # build the application image
-     - run: npm run docker:build
-     # running the image
-     - run: npm run docker:run
-    runningcypress:
-      docker:
-        - image: cypress/browsers
-    steps:
-     - checkout
-     - run: npm run cypress:run
+orbs:
+  docker: circleci/docker@1.0.1
+  cypress: cypress-io/cypress@1.16.1
+  workflows:
+    rundocker:
+      jobs:
+        - docker/publish:
+            executor:
+              image: circleci/node
+              name: docker/docker
+              tag: boron-browsers
+            image: online-portfolio
+            remote-docker-dlc: true
+            tag: online-portfolio
+            use-remote-docker: true
+            runcypress:
+              jobs:
+                - cypress/run:
 workflows:
   version: 2.1
   Portfolio-Tests:
       jobs:
-        - runningdocker
-        - runningcypress
+        - rundocker
+        - runcypress
