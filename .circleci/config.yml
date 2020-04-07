@@ -10,9 +10,9 @@ orbs:
               image: circleci/node
               name: docker/docker
               tag: boron-browsers
-            image: online-portfolio
+            image: my/image
             remote-docker-dlc: true
-            tag: online-portfolio
+            tag: my-tag
             use-remote-docker: true
             build:
               jobs:
