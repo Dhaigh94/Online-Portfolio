@@ -3,7 +3,7 @@ orbs:
   docker: circleci/docker@1.0.1
   cypress: cypress-io/cypress@1.16.1
   workflows:
-    rundocker:
+    build-and-publish-docker-image:
       jobs:
         - docker/publish:
             executor:
@@ -14,12 +14,11 @@ orbs:
             remote-docker-dlc: true
             tag: online-portfolio
             use-remote-docker: true
-            runcypress:
+            build:
               jobs:
                 - cypress/run:
 workflows:
-  version: 2.1
   Portfolio-Tests:
       jobs:
-        - rundocker
-        - runcypress
+        - docker/publish
+        - cypress/run
