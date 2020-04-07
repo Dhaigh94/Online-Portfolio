@@ -20,5 +20,5 @@ orbs:
 workflows:
   Portfolio-Tests:
       jobs:
-        - docker/publish
+        - build-and-publish-docker-image
         - cypress/run
