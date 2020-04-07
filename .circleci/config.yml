@@ -1,20 +1,12 @@
 version: 2.1
 orbs:
-  docker: circleci/docker@1.0.1
+  node: circleci/node@1.1.6
   cypress: cypress-io/cypress@1.16.1
   workflows:
-    check-and-build-only:
-      executor: docker/machine
-      steps:
-        - checkout
-        - docker/check
-        - docker/build:
-            image: $CIRCLE_PROJECT_USERNAME/$CIRCLE_PROJECT_REPONAME
-            runcypress:
-              jobs:
-                - cypress/run:
-workflows:
-  build-docker-image-only:
+    build:
       jobs:
-        - check-and-build-only
+        - cypress/run:
+workflows:
+  Portfolio-Tests:
+      jobs:
         - cypress/run
