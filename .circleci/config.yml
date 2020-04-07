@@ -1,12 +1,22 @@
 version: 2.1
-orbs:
-  node: circleci/node@1.1.6
-  cypress: cypress-io/cypress@1.16.1
-  workflows:
-    build:
-      jobs:
-        - cypress/run:
+jobs:
+  runningdocker:
+    machine: true
+    steps:
+      - checkout
+      # build the application image
+      - run: npm run docker:build
+      # running the image
+      - run: npm run docker:run
+  runningcypress:
+    docker:
+      - image: cypress/browsers
+    steps:
+      - checkout
+      - run: npm run cypress:run
 workflows:
+  version: 2.1
   Portfolio-Tests:
-      jobs:
-        - cypress/run
+    jobs:
+      - runningdocker
+      - runningcypress
