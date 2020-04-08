@@ -5,6 +5,7 @@ jobs:
       - image: cypress/browsers
     steps:
       - checkout
+      - run: npm install
       - run: npm run docker:build
       - run: npm run docker:run
       - run: npm run cypress:run
