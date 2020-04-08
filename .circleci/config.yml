@@ -1,25 +1,15 @@
 version: 2.1
 jobs:
-  runningdocker:
-    machine: true
-    steps:
-      - checkout
-      # build the application image
-      - run: npm run docker:build
-      # running the image
-      - run: npm run docker:run
-  runningcypress:
+  buildandrun:
     docker:
       - image: cypress/browsers
     steps:
       - checkout
-      - run: npm install
+      - run: npm run docker:build
+      - run: npm run docker:run
       - run: npm run cypress:run
 workflows:
   version: 2.1
   Portfolio-Tests:
     jobs:
-      - runningdocker
-      - runningcypress
-  requires:
-      - runningdocker
+      - buildandrun
