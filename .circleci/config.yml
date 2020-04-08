@@ -1,13 +1,15 @@
 version: 2.1
 jobs:
   Build-and-Run:
+    context: my-env # has an env var called PERCY_TOKEN
     docker:
       - image: cypress/browsers
     steps:
       - checkout
       - run: 
-        name: "Setup Percy API Token"
-        command: echo 'export PERCY_TOKEN="FOO"' >> $PERCY_TOKEN 
+        name: "Echo an env var that is part of our context for this it is the PERCY_TOKEN"
+        command: |
+          echo $PERCY_TOKEN 
       - run: npm install
       - run: npm run percy:ci
 workflows:
