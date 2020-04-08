@@ -6,9 +6,8 @@ jobs:
     steps:
       - checkout
       - run: 
-        name: "Percy Snapshot Token"
-        command: |
-          echo $PERCY_TOKEN 
+        name: "Setup Percy API Token"
+        command: echo 'export PERCY_TOKEN="FOO"' >> $PERCY_TOKEN 
       - run: npm install
       - run: npm run percy:ci
 workflows:
