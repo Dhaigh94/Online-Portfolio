@@ -5,7 +5,10 @@ jobs:
       - image: cypress/browsers
     steps:
       - checkout
-      - run: export $PERCY_TOKEN
+      - run: 
+        name: "echo an env var that is part of our project"
+        command: |
+          echo $PERCY_TOKEN # this env var must be swt within the project
       - run: npm install
       - run: npm run percy:ci
 workflows:
