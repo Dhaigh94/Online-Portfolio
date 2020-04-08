@@ -22,4 +22,4 @@ Then you need to run ```npm run percy:run```.
 ### Running on CI
 This project is running on CircleCI as a CI platform which you can learn more about CircleCI here: https://circleci.com/.
 
-[![CircleCI](https://circleci.com/gh/Dhaigh94/Online-Portfolio?style=svg)](https://circleci.com/gh/Dhaigh94/Online-Portfolio)
+[![CircleCI](https://circleci.com/gh/Dhaigh94/Online-Portfolio.svg?style=svg)](https://circleci.com/gh/Dhaigh94/Online-Portfolio)
