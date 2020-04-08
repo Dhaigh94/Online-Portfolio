@@ -1,6 +1,6 @@
 version: 2.1
 jobs:
-  buildandrun:
+  Build-and-Run:
     docker:
       - image: cypress/browsers
     steps:
@@ -11,4 +11,4 @@ workflows:
   version: 2.1
   Portfolio-Tests:
     jobs:
-      - buildandrun
+      - Build-and-Run
