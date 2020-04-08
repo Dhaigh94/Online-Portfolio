@@ -18,3 +18,8 @@ Then you need to export the Percy token in the ENV variables, if you are using W
 Then you need to run ```npm run percy:run```.
 
 [![This project is using Percy.io for visual regression testing.](https://percy.io/static/images/percy-badge.svg)](https://percy.io/Davids-Stuff/Online-Portfolio)
+
+### Running on CI
+This project is running on CircleCI as a CI platform which you can learn more about CircleCI here: https://circleci.com/.
+
+[![CircleCI](https://circleci.com/gh/Dhaigh94/Online-Portfolio?style=svg)](https://circleci.com/gh/Dhaigh94/Online-Portfolio)
