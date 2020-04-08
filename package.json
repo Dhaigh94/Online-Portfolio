@@ -11,7 +11,7 @@
     "start": "npm install&&node server.js",
     "local": "node server.js",
     "ci:run": "start-server-and-test start http://localhost:8080 cypress:run",
-    "percy:server": "start-server-and-test start http://localhost:8080 percy:run",
+    "percy:ci": "start-server-and-test start http://localhost:8080 percy:run",
     "docker:build": "docker build -t online-portfolio . ",
     "docker:run": "docker run -p 8080:8080 online-portfolio",
     "cypress:open": "cypress open",

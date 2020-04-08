@@ -5,8 +5,9 @@ jobs:
       - image: cypress/browsers
     steps:
       - checkout
+      - run: echo $PERCY_TOKEN
       - run: npm install
-      - run: npm run ci:run
+      - run: npm run percy:ci
 workflows:
   version: 2.1
   Portfolio-Tests:
