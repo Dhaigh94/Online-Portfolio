@@ -9,11 +9,11 @@ jobs:
       - run: npm install
       - run: npm run percy:ci
       - store_test_results:
-        path: ../results/junit-results
+          path: junit-results
       - store_artifacts:
-        path: ../cypress/videos
+          path: cypress/videos
       - store_artifacts:
-        path: ../cypress/screenshots
+          path: cypress/screenshots
 workflows:
   version: 2.1
   Portfolio-Tests:
