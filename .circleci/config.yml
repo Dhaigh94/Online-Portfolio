@@ -8,7 +8,7 @@ jobs:
       - run: echo $PERCY_TOKEN
       - run: npm install
       - run: npm run percy:ci
-      - store_test_results:
+      - store_test_results
         path: junit-results
 workflows:
   version: 2.1
