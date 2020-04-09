@@ -8,6 +8,10 @@ jobs:
       - run: echo $PERCY_TOKEN
       - run: npm install
       - run: npm run percy:ci
+      - store_artifacts:
+        path: cypress/screenshots
+      - store_artifacts:
+        path: cypress/videos
 workflows:
   version: 2.1
   Portfolio-Tests:
