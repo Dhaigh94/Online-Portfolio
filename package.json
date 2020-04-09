@@ -10,12 +10,13 @@
   "scripts": {
     "start": "npm install&&node server.js",
     "local": "node server.js",
-    "ci:run": "start-server-and-test start http://localhost:8080 cypress:run",
-    "percy:ci": "start-server-and-test start http://localhost:8080 percy:run",
+    "ci:run": "start-server-and-test start http://localhost:8080 cypressci:run",
+    "percy:ci": "start-server-and-test start http://localhost:8080 percyci:run",
     "docker:build": "docker build -t online-portfolio . ",
     "docker:run": "docker run -p 8080:8080 online-portfolio",
     "cypress:open": "cypress open",
     "cypress:run": "cypress run",
+    "cypressci:run": "cypress run --reporter junit --reporter-options 'mochaFile=junit-results/test-results.xml'",
     "cypress:chrome": "cypress run --browser chrome",
     "cypress:chromium": "cypress run --browser chromium",
     "cypress:chromecanary": "cypress run --browser chrome:canary",
@@ -24,7 +25,8 @@
     "cypress:firefox": "cypress run --browser firefox",
     "cypress:firefoxdev": "cypress run --browser firefox:dev",
     "cypress:firefoxnight": "cypress run --browser firefox:nightly",
-    "percy:run": "percy exec -- cypress run"
+    "percy:run": "percy exec -- cypress run",
+    "percyci:run": "percy exec -- cypress run --reporter junit --reporter-options 'mochaFile=junit-results/test-results.xml'"
   },
   "keywords": [
     "Portfolio"
@@ -47,6 +49,8 @@
     "@percy/cypress": "^2.3.1",
     "cypress": "^4.3.0",
     "cypress-dark": "^1.7.14",
+    "mocha": "^7.1.1",
+    "mocha-junit-reporter": "^1.23.3",
     "start-server-and-test": "^1.10.11"
   }
 }
