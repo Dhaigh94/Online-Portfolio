@@ -8,8 +8,6 @@ jobs:
       - run: echo $PERCY_TOKEN
       - run: npm install
       - run: npm run percy:ci
-      - store_test_results:
-        path: test-results
 workflows:
   version: 2.1
   Portfolio-Tests:
