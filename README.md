@@ -1,5 +1,6 @@
 # Online-Portfolio
 This is my Online Portfolio I made from Scratch using NodeJS, HTML, CSS and Bootstrap.
+
 ![GitHub pull requests](https://img.shields.io/github/issues-pr/Dhaigh94/Online-Portfolio)
 ![GitHub closed pull requests](https://img.shields.io/github/issues-pr-closed/Dhaigh94/Online-Portfolio)
 ![Website](https://img.shields.io/website?url=https%3A%2F%2Fwww.davidhaighportfolio.com%2F)
@@ -19,14 +20,17 @@ To run Cypress in the command line you need to type ```npm run cypress:run``` wh
 To run Percy you need to make sure that the app is running.
 Then you need to export the Percy token in the ENV variables, if you are using Windows you have to type ```set PERCY_TOKEN=yourtoken```, for Mac ```export PERCY_TOKEN=yourtoken```.
 Then you need to run ```npm run percy:run```.
+
 [![This project is using Percy.io for visual regression testing.](https://percy.io/static/images/percy-badge.svg)](https://percy.io/Davids-Stuff/Online-Portfolio)
 
 ### Running on CI
 This project is running on CircleCI as a CI platform which you can learn more about CircleCI here: https://circleci.com/.
+
 [![CircleCI](https://circleci.com/gh/Dhaigh94/Online-Portfolio.svg?style=shield)](https://circleci.com/gh/Dhaigh94/Online-Portfolio)
 
 ### Social Media
 Here is some Social Media buttons below you can follow me on.
+
 [![Twitter URL](https://img.shields.io/twitter/url/http/shields.io.svg?style=social&style=plastic)](https://twitter.com/BugDevilDavid)
 [![Twitter Follow](https://img.shields.io/twitter/follow/BugDevilDavid.svg?style=social)](https://twitter.com/BugDevilDavid)
 ![GitHub followers](https://img.shields.io/github/followers/Dhaigh94?style=social)
