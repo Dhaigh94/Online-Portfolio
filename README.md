@@ -1,12 +1,12 @@
 # Online-Portfolio
 This is my Online Portfolio I made from Scratch using NodeJS, HTML, CSS and Bootstrap.
 
-[![NPM Version](https://img.shields.io/npm/v/npm.svg?style=flat)]()
-[![NPM License](https://img.shields.io/npm/l/all-contributors.svg?style=flat)](https://github.com/Dhaigh94/Online-Portfolio/master/LICENSE)
-[![NPM Downloads](https://img.shields.io/npm/dt/express.svg?style=flat)]()  
-[![Dependecy Status](https://david-dm.org/tterb/Hyde.svg)](https://david-dm.org/tterb/Hyde)  
-[![devDependencies Status](https://david-dm.org/tterb/Hyde/dev-status.svg)](https://david-dm.org/tterb/Hyde?type=dev)  
-[![NPM](https://nodei.co/npm/electron-download.png?downloads=true)](https://www.npmjs.com/package/electron-download) 
+### Repo Status
+The Status of the repo is below.
+
+![GitHub pull requests](https://img.shields.io/github/issues-pr/Dhaigh94/Online-Portfolio)
+![GitHub closed pull requests](https://img.shields.io/github/issues-pr-closed/Dhaigh94/Online-Portfolio)
+![Website](https://img.shields.io/website?url=https%3A%2F%2Fwww.davidhaighportfolio.com%2F)
 
 ### To Run the APP
 To run the app you need to install the node_modules by typing ```npm install``` in the project, then run it by typing ```npm run local```. If this is your first time running the app you can also do ```npm run start``` which will install the Node Modules and run the app at the same time.
@@ -30,3 +30,13 @@ Then you need to run ```npm run percy:run```.
 This project is running on CircleCI as a CI platform which you can learn more about CircleCI here: https://circleci.com/.
 
 [![CircleCI](https://circleci.com/gh/Dhaigh94/Online-Portfolio.svg?style=shield)](https://circleci.com/gh/Dhaigh94/Online-Portfolio)
+
+### Social Media
+Here is some Social Media buttons below you can follow me on.
+
+[![Twitter URL](https://img.shields.io/twitter/url/http/shields.io.svg?style=social&style=plastic)](https://twitter.com/BugDevilDavid)
+[![Twitter Follow](https://img.shields.io/twitter/follow/bstevensondev.svg?style=social)](https://twitter.com/BugDevilDavid)
+![GitHub followers](https://img.shields.io/github/followers/Dhaigh94?style=social)
+![GitHub forks](https://img.shields.io/github/forks/Dhaigh94/Online-Portfolio?style=social)
+![GitHub stars](https://img.shields.io/github/stars/Dhaigh94/Online-Portfolio?style=social)
+![GitHub watchers](https://img.shields.io/github/watchers/Dhaigh94/Online-Portfolio?style=social)
