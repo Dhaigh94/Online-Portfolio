@@ -7,15 +7,13 @@ jobs:
       - checkout
       - run: echo $PERCY_TOKEN
       - run: npm install
-      - run:
-        name: Running E2E tests with JUnit reporter and Percy
-        command: npm run percy:ci
+      - run: npm run percy:ci
       - store_test_results:
         path: junit-results
       - store_artifacts:
-          path: cypress/videos
+        path: cypress/videos
       - store_artifacts:
-          path: cypress/screenshots
+        path: cypress/screenshots
 workflows:
   version: 2.1
   Portfolio-Tests:
