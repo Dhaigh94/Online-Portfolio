@@ -8,12 +8,9 @@ jobs:
       - run: echo $PERCY_TOKEN
       - run: npm install
       - run: npm run percy:ci
-      - store_test_results:
-        path: junit-results
-      - store_artifacts:
-        path: cypress/videos
-      - store_artifacts:
-        path: cypress/screenshots
+      - store_test_results: junit-results
+      - store_artifacts: cypress/videos
+      - store_artifacts: cypress/screenshots
 workflows:
   version: 2.1
   Portfolio-Tests:
