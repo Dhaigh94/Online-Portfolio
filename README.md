@@ -31,7 +31,7 @@ This project is running on CircleCI as a CI platform which you can learn more ab
 ### Social Media
 Here is some Social Media buttons below you can follow me on.
 
-[![Twitter URL](https://img.shields.io/twitter/url/http/shields.io.svg?style=social&style=plastic)](https://twitter.com/BugDevilDavid)
+[![Twitter URL](https://img.shields.io/twitter/url/http/shields.io.svg?style=social&style=plastic)](https://twitter.com)
 [![Twitter Follow](https://img.shields.io/twitter/follow/BugDevilDavid.svg?style=social)](https://twitter.com/BugDevilDavid)
 ![GitHub followers](https://img.shields.io/github/followers/Dhaigh94?style=social)
 ![GitHub forks](https://img.shields.io/github/forks/Dhaigh94/Online-Portfolio?style=social)
