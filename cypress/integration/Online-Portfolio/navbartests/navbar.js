@@ -1,12 +1,12 @@
 describe('Portfolio Navbar Tests', () => {
     beforeEach(function() {
         cy.visit('/')
-        cy.url().should('include', 'http://localhost:8080gh')
+        cy.url().should('include', 'http://localhost:8080')
         cy.title().should('eq', "David's Portfolio")
     })
 
     it('Check that the Work link on the Navbar goes to the Work page', function() {
-        cy.get('[data-cy=Work]').click()
+        cy.get('[data-cy=Workff]').click()
         cy.url().should('include', '/work')
         cy.percySnapshot('Work')
     })
