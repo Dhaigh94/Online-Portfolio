@@ -3,7 +3,6 @@ jobs:
   Build-and-Run:
     docker:
       - image: cypress/browsers
-    parallelism: 8
     steps:
       - checkout
       - run: echo $PERCY_TOKEN
