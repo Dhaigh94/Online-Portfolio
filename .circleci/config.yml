@@ -2,7 +2,7 @@ version: 2.1
 jobs:
   Build-and-Run:
     docker:
-      - image: cypress/browsers
+      - image: circleci/node:latest
     steps:
       - checkout
       - run: echo $PERCY_TOKEN
