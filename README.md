@@ -12,6 +12,8 @@ Before you run Cypress you need to make sure the app is running.
 To run Cypress to need to type ```npm run cypress:open``` and then choose the test for want to run.
 To run Cypress in the command line you need to type ```npm run cypress:run``` which will run all the tests.
 
+[![Cypress Dashboard](https://img.shields.io/badge/cypress-dashboard-brightgreen.svg)](https://dashboard.cypress.io/projects/hmdg5m/runs)
+
 ### To Run Percy
 To run Percy you need to make sure that the app is running.
 Then you need to export the Percy token in the ENV variables, if you are using Windows you have to type ```set PERCY_TOKEN=yourtoken```, for Mac ```export PERCY_TOKEN=yourtoken```.
