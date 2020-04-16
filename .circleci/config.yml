@@ -3,7 +3,7 @@ jobs:
   Build-and-Run:
     docker:
       - image: circleci/node:latest-browsers
-      - parallelism: 7
+    parallelism: 7
     steps:
       - checkout
       - run: echo $PERCY_TOKEN
