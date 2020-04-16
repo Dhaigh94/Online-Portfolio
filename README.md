@@ -3,6 +3,7 @@ This is my Online Portfolio I made from Scratch using NodeJS, HTML, CSS and Boot
 
 ![GitHub pull requests](https://img.shields.io/github/issues-pr/Dhaigh94/Online-Portfolio)
 ![GitHub closed pull requests](https://img.shields.io/github/issues-pr-closed/Dhaigh94/Online-Portfolio)
+![GitHub last commit](https://img.shields.io/github/last-commit/Dhaigh94/Online-Portfolio)
 ![Website](https://img.shields.io/website?url=https%3A%2F%2Fwww.davidhaighportfolio.com%2F)
 
 ### To Run the APP
