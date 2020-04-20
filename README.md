@@ -4,6 +4,11 @@ This is my Online Portfolio I made from Scratch using NodeJS, HTML, CSS and Boot
 ![GitHub language count](https://img.shields.io/github/languages/count/Dhaigh94/Online-Portfolio)
 ![GitHub top language](https://img.shields.io/github/languages/top/Dhaigh94/Online-Portfolio)
 ![GitHub repo size](https://img.shields.io/github/repo-size/Dhaigh94/Online-Portfolio)
+![GitHub commit activity](https://img.shields.io/github/commit-activity/y/Dhaigh94/Online-Portfolio)
+![GitHub contributors](https://img.shields.io/github/contributors/Dhaigh94/Online-Portfolio)
+![GitHub last commit](https://img.shields.io/github/last-commit/Dhaigh94/Online-Portfolio)
+![GitHub pull requests](https://img.shields.io/github/issues-pr/Dhaigh94/Online-Portfolio)
+![GitHub closed pull requests](https://img.shields.io/github/issues-pr-closed/Dhaigh94/Online-Portfolio)
 
 ### To Run the APP
 To run the app you need to install the node_modules by typing ```npm install``` in the project, then run it by typing ```npm run local```. If this is your first time running the app you can also do ```npm run start``` which will install the Node Modules and run the app at the same time.
