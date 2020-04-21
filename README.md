@@ -1,10 +1,6 @@
 # Online-Portfolio
 This is my Online Portfolio I made from Scratch using NodeJS, HTML, CSS and Bootstrap.
 
-![GitHub language count](https://img.shields.io/github/languages/count/Dhaigh94/Online-Portfolio)
-![GitHub top language](https://img.shields.io/github/languages/top/Dhaigh94/Online-Portfolio)
-![GitHub repo size](https://img.shields.io/github/repo-size/Dhaigh94/Online-Portfolio)
-
 ### To Run the APP
 To run the app you need to install the node_modules by typing ```npm install``` in the project, then run it by typing ```npm run local```. If this is your first time running the app you can also do ```npm run start``` which will install the Node Modules and run the app at the same time.
 
