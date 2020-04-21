@@ -4,9 +4,6 @@ This is my Online Portfolio I made from Scratch using NodeJS, HTML, CSS and Boot
 ![GitHub language count](https://img.shields.io/github/languages/count/Dhaigh94/Online-Portfolio)
 ![GitHub top language](https://img.shields.io/github/languages/top/Dhaigh94/Online-Portfolio)
 ![GitHub repo size](https://img.shields.io/github/repo-size/Dhaigh94/Online-Portfolio)
-![GitHub commit activity](https://img.shields.io/github/commit-activity/y/Dhaigh94/Online-Portfolio)
-![GitHub contributors](https://img.shields.io/github/contributors/Dhaigh94/Online-Portfolio)
-![GitHub last commit](https://img.shields.io/github/last-commit/Dhaigh94/Online-Portfolio)
 ![GitHub pull requests](https://img.shields.io/github/issues-pr/Dhaigh94/Online-Portfolio)
 ![GitHub closed pull requests](https://img.shields.io/github/issues-pr-closed/Dhaigh94/Online-Portfolio)
 
@@ -41,6 +38,3 @@ Here is some Social Media Channels you can follow me on.
 ![Twitter URL](https://img.shields.io/twitter/url?style=social&url=https%3A%2F%2Ftwitter.com%2Fhome)
 ![Twitter Follow](https://img.shields.io/twitter/follow/BugDevilDavid?style=social)
 ![GitHub followers](https://img.shields.io/github/followers/Dhaigh94?style=social)
-![GitHub forks](https://img.shields.io/github/forks/Dhaigh94/Online-Portfolio?style=social)
-![GitHub stars](https://img.shields.io/github/stars/Dhaigh94/Online-Portfolio?style=social)
-![GitHub watchers](https://img.shields.io/github/watchers/Dhaigh94/Online-Portfolio?style=social)
