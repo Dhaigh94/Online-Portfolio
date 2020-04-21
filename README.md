@@ -1,6 +1,11 @@
 # Online-Portfolio
 This is my Online Portfolio I made from Scratch using NodeJS, HTML, CSS and Bootstrap.
 
+[![forthebadge](https://forthebadge.com/images/badges/uses-css.svg)](http://forthebadge.com)
+[![forthebadge](https://forthebadge.com/images/badges/uses-git.svg)](http://forthebadge.com)
+[![forthebadge](https://forthebadge.com/images/badges/uses-html.svg)](http://forthebadge.com)
+[![forthebadge](https://forthebadge.com/images/badges/uses-js.svg)](http://forthebadge.com)
+
 ### To Run the APP
 To run the app you need to install the node_modules by typing ```npm install``` in the project, then run it by typing ```npm run local```. If this is your first time running the app you can also do ```npm run start``` which will install the Node Modules and run the app at the same time.
 
@@ -29,5 +34,20 @@ This project is running on CircleCI as a CI platform which you can learn more ab
 ### Social Media
 Here is some Social Media Channels you can follow me on.
 
-![Twitter Follow](https://img.shields.io/twitter/follow/BugDevilDavid?style=social)
-![GitHub followers](https://img.shields.io/github/followers/Dhaigh94?style=social)
+### Facebook
+https://www.facebook.com/david.haigh.104
+
+### Twitter
+https://twitter.com/BugDevilDavid
+
+### Linkedin
+https://www.linkedin.com/in/david-haigh-46161097/
+
+### Github
+https://github.com/Dhaigh94
+
+### Instagram
+https://www.instagram.com/bugdevildavid/
+
+### Youtube
+https://www.youtube.com/channel/UCkJ0xOTmM3rXfSGj2xcsnLg
