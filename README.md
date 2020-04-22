@@ -34,9 +34,6 @@ This project is running on CircleCI as a CI platform which you can learn more ab
 ### Social Media
 Here is some Social Media Channels you can follow me on.
 
-<style>
-a {padding-right:5px;}
-</style>
 <a href="https://www.facebook.com/david.haigh.104"><img src="https://i.imgur.com/PZYoIJT.png?2" title="source: imgur.com" /></a>
 <a href="https://twitter.com/BugDevilDavid"><img padding-right="2px" src="https://i.imgur.com/KZOtIJV.png?2" title="source: imgur.com" /></a>
 <a href="https://www.linkedin.com/in/david-haigh-46161097/"><img padding-right="2px" src="https://i.imgur.com/SUlgkxp.png?2" title="source: imgur.com" /></a>
