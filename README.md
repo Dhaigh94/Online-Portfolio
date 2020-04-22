@@ -34,16 +34,9 @@ This project is running on CircleCI as a CI platform which you can learn more ab
 ### Social Media
 Here is some Social Media Channels you can follow me on.
 
-[![alt text][1.1]][1]
-[![alt text][2.1]][2]
-[![alt text][3.1]][3]
-[![alt text][4.1]][4]
-[![alt text][5.1]][5]
-[![alt text][6.1]][6]
-
-[1.1]: https://i.imgur.com/QDvoO2q.png [1]: https://twitter.com/BugDevilDavid
-[2.1]: https://i.imgur.com/xCLYlin.png [2]: https://www.facebook.com/david.haigh.104
-[3.1]: https://i.imgur.com/xFSeJty.png [3]: https://github.com/Dhaigh94
-[4.1]: https://i.imgur.com/4ZVbLMT.png [4]: https://www.linkedin.com/in/david-haigh-46161097/
-[5.1]: https://i.imgur.com/aES9sv1.png [5]: https://www.instagram.com/bugdevildavid/
-[6.1]: https://i.imgur.com/9wfcNf4.png [6]: https://www.youtube.com/channel/UCkJ0xOTmM3rXfSGj2xcsnLg
+[![alt text][1.1]: https://i.imgur.com/QDvoO2q.png][1]: https://twitter.com/BugDevilDavid
+[![alt text][2.1]: https://i.imgur.com/xCLYlin.png][2]: https://www.facebook.com/david.haigh.104
+[![alt text][3.1]: https://i.imgur.com/xFSeJty.png][3]: https://github.com/Dhaigh94
+[![alt text][4.1]: https://i.imgur.com/4ZVbLMT.png][4]: https://www.linkedin.com/in/david-haigh-46161097/
+[![alt text][5.1]: https://i.imgur.com/aES9sv1.png][5]: https://www.instagram.com/bugdevildavid/
+[![alt text][6.1]: https://i.imgur.com/9wfcNf4.png][6]: https://www.youtube.com/channel/UCkJ0xOTmM3rXfSGj2xcsnLg
