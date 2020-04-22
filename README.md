@@ -34,9 +34,9 @@ This project is running on CircleCI as a CI platform which you can learn more ab
 ### Social Media
 Here is some Social Media Channels you can follow me on.
 
-<a href="https://www.facebook.com/david.haigh.104"><img src="https://i.imgur.com/xCLYlint.png" title="source: imgur.com" /></a>
-<a href="https://twitter.com/BugDevilDavid"><img src="https://i.imgur.com/QDvoO2qt.png" title="source: imgur.com" /></a>
-<a href="https://www.linkedin.com/in/david-haigh-46161097/"><img src="https://i.imgur.com/4ZVbLMTt.png" title="source: imgur.com" /></a>
-<a href="https://www.instagram.com/bugdevildavid/"><img src="https://i.imgur.com/aES9sv1t.png" title="source: imgur.com" /></a>
-<a href="https://github.com/Dhaigh94"><img src="https://i.imgur.com/xFSeJtyt.png" title="source: imgur.com" /></a>
-<a href="https://www.youtube.com/channel/UCkJ0xOTmM3rXfSGj2xcsnLg"><img src="https://i.imgur.com/9wfcNf4t.png" title="source: imgur.com" /></a>
+<div>Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/free-icon/facebook_1051258" title="Flaticon">https://www.facebook.com/david.haigh.104</a></div>
+<div>Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/free-icon/twitter_1409937" title="Flaticon">https://twitter.com/BugDevilDavid</a></div>
+<div>Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/free-icon/linkedin_1051282" title="Flaticon">https://www.linkedin.com/in/david-haigh-46161097/</a></div>
+<div>Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/free-icon/instagram_1409946" title="Flaticon">https://www.instagram.com/bugdevildavid/</a></div>
+<div>Icons made by <a href="https://www.flaticon.com/authors/roundicons" title="Roundicons">Roundicons</a> from <a href="https://www.flaticon.com/free-icon/github_270798?term=github&page=1&position=24" title="Flaticon">https://github.com/Dhaigh94</a></div>
+<div>Icons made by <a href="https://www.flaticon.com/authors/roundicons" title="Roundicons">Roundicons</a> from <a href="https://www.flaticon.com/free-icon/youtube_187210?term=youtube&page=1&position=56" title="Flaticon">https://www.youtube.com/channel/UCkJ0xOTmM3rXfSGj2xcsnLg</a></div>
