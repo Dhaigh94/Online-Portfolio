@@ -34,9 +34,9 @@ This project is running on CircleCI as a CI platform which you can learn more ab
 ### Social Media
 Here is some Social Media Channels you can follow me on.
 
-<div>Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">https://www.flaticon.com/free-icon/facebook_1051258</a>https://www.facebook.com/david.haigh.104</div>
-<div>Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">https://www.flaticon.com/free-icon/twitter_1409937</a>https://twitter.com/BugDevilDavid</div>
-<div>Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">https://www.flaticon.com/free-icon/linkedin_1051282</a>https://www.linkedin.com/in/david-haigh-46161097/</div>
-<div>Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">https://www.flaticon.com/free-icon/instagram_1409946</a>https://www.instagram.com/bugdevildavid/</div>
-<div>Icons made by <a href="https://www.flaticon.com/authors/roundicons" title="Roundicons">Roundicons</a> from <a href="https://www.flaticon.com/" title="Flaticon">https://www.flaticon.com/free-icon/github_270798?term=github&page=1&position=24</a>https://github.com/Dhaigh94</div>
-<div>Icons made by <a href="https://www.flaticon.com/authors/roundicons" title="Roundicons">Roundicons</a> from <a href="https://www.flaticon.com/" title="Flaticon">https://www.flaticon.com/free-icon/youtube_187210?term=youtube&page=1&position=56</a>https://www.youtube.com/channel/UCkJ0xOTmM3rXfSGj2xcsnLg</div>
+<a href="https://www.facebook.com/david.haigh.104"><img src="https://i.imgur.com/PZYoIJT.png?1" title="source: imgur.com" /></a>
+<a href="https://twitter.com/BugDevilDavid"><img src="https://i.imgur.com/KZOtIJV.png?1" title="source: imgur.com" /></a>
+<a href="https://www.linkedin.com/in/david-haigh-46161097/"><img src="https://i.imgur.com/SUlgkxp.png?1" title="source: imgur.com" /></a>
+<a href="https://www.instagram.com/bugdevildavid/"><img src="https://i.imgur.com/Qn0Y6YW.png?1" title="source: imgur.com" /></a>
+<a href="https://github.com/Dhaigh94"><img src="https://i.imgur.com/0QJGqJD.png?1" title="source: imgur.com" /></a>
+<a href="https://www.youtube.com/channel/UCkJ0xOTmM3rXfSGj2xcsnLg"><img src="https://i.imgur.com/C7As3T9.png?1" title="source: imgur.com" /></a>
