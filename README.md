@@ -34,6 +34,13 @@ This project is running on CircleCI as a CI platform which you can learn more ab
 ### Social Media
 Here is some Social Media Channels you can follow me on.
 
+[![alt text][1.1]][1]
+[![alt text][2.1]][2]
+[![alt text][3.1]][3]
+[![alt text][4.1]][4]
+[![alt text][5.1]][5]
+[![alt text][6.1]][6]
+
 [1.1]: https://i.imgur.com/QDvoO2q.png [1]: https://twitter.com/BugDevilDavid
 [2.1]: https://i.imgur.com/xCLYlin.png [2]: https://www.facebook.com/david.haigh.104
 [3.1]: https://i.imgur.com/xFSeJty.png [3]: https://github.com/Dhaigh94
