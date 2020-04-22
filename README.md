@@ -34,20 +34,9 @@ This project is running on CircleCI as a CI platform which you can learn more ab
 ### Social Media
 Here is some Social Media Channels you can follow me on.
 
-### Facebook
-https://www.facebook.com/david.haigh.104
-
-### Twitter
-https://twitter.com/BugDevilDavid
-
-### Linkedin
-https://www.linkedin.com/in/david-haigh-46161097/
-
-### Github
-https://github.com/Dhaigh94
-
-### Instagram
-https://www.instagram.com/bugdevildavid/
-
-### Youtube
-https://www.youtube.com/channel/UCkJ0xOTmM3rXfSGj2xcsnLg
+[1]: https://www.facebook.com/david.haigh.104
+[2]: https://twitter.com/BugDevilDavid
+[3]: https://www.linkedin.com/in/david-haigh-46161097/
+[4]: https://github.com/Dhaigh94
+[5]: https://www.instagram.com/bugdevildavid/
+[6]: https://www.youtube.com/channel/UCkJ0xOTmM3rXfSGj2xcsnLg
