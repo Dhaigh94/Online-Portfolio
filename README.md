@@ -1,14 +1,10 @@
 # Online-Portfolio
 This is my Online Portfolio I made from Scratch using NodeJS, HTML, CSS and Bootstrap.
 
-![GitHub language count](https://img.shields.io/github/languages/count/Dhaigh94/Online-Portfolio)
-![GitHub top language](https://img.shields.io/github/languages/top/Dhaigh94/Online-Portfolio)
-![GitHub repo size](https://img.shields.io/github/repo-size/Dhaigh94/Online-Portfolio)
-![GitHub commit activity](https://img.shields.io/github/commit-activity/y/Dhaigh94/Online-Portfolio)
-![GitHub contributors](https://img.shields.io/github/contributors/Dhaigh94/Online-Portfolio)
-![GitHub last commit](https://img.shields.io/github/last-commit/Dhaigh94/Online-Portfolio)
-![GitHub pull requests](https://img.shields.io/github/issues-pr/Dhaigh94/Online-Portfolio)
-![GitHub closed pull requests](https://img.shields.io/github/issues-pr-closed/Dhaigh94/Online-Portfolio)
+[![forthebadge](https://forthebadge.com/images/badges/uses-css.svg)](http://forthebadge.com)
+[![forthebadge](https://forthebadge.com/images/badges/uses-git.svg)](http://forthebadge.com)
+[![forthebadge](https://forthebadge.com/images/badges/uses-html.svg)](http://forthebadge.com)
+[![forthebadge](https://forthebadge.com/images/badges/uses-js.svg)](http://forthebadge.com)
 
 ### To Run the APP
 To run the app you need to install the node_modules by typing ```npm install``` in the project, then run it by typing ```npm run local```. If this is your first time running the app you can also do ```npm run start``` which will install the Node Modules and run the app at the same time.
@@ -38,9 +34,9 @@ This project is running on CircleCI as a CI platform which you can learn more ab
 ### Social Media
 Here is some Social Media Channels you can follow me on.
 
-![Twitter URL](https://img.shields.io/twitter/url?style=social&url=https%3A%2F%2Ftwitter.com%2Fhome)
-![Twitter Follow](https://img.shields.io/twitter/follow/BugDevilDavid?style=social)
-![GitHub followers](https://img.shields.io/github/followers/Dhaigh94?style=social)
-![GitHub forks](https://img.shields.io/github/forks/Dhaigh94/Online-Portfolio?style=social)
-![GitHub stars](https://img.shields.io/github/stars/Dhaigh94/Online-Portfolio?style=social)
-![GitHub watchers](https://img.shields.io/github/watchers/Dhaigh94/Online-Portfolio?style=social)
+<a href="https://www.facebook.com/david.haigh.104"><img src="https://i.imgur.com/PZYoIJT.png?3" title="source: imgur.com" /></a>
+<a href="https://twitter.com/BugDevilDavid"><img padding-right="2px" src="https://i.imgur.com/KZOtIJV.png?3" title="source: imgur.com" /></a>
+<a href="https://www.linkedin.com/in/david-haigh-46161097/"><img padding-right="2px" src="https://i.imgur.com/SUlgkxp.png?3" title="source: imgur.com" /></a>
+<a href="https://www.instagram.com/bugdevildavid/"><img src="https://i.imgur.com/Qn0Y6YW.png?3" title="source: imgur.com" /></a>
+<a href="https://github.com/Dhaigh94"><img src="https://i.imgur.com/0QJGqJD.png?3" title="source: imgur.com" /></a>
+<a href="https://www.youtube.com/channel/UCkJ0xOTmM3rXfSGj2xcsnLg"><img src="https://i.imgur.com/C7As3T9.png?3" title="source: imgur.com" /></a>
