@@ -33,6 +33,14 @@ body {
     color: #252a2d;
 }
 
+#gallery {
+  text-align: center;
+}
+
+#gallerydiv {
+  display: inline-block;
+}
+
 iframe {
     margin-left: auto;
     margin-right: auto;

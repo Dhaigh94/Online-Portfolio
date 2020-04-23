@@ -1,7 +1,8 @@
 <% include ./../partials/header %>
 <br>
 <div class="container">
-    <h1 id="header">Portfolio Resources</div>
+    <h1 id="header">Portfolio Resources
+</div>
 <p class="text-center">This is a list of resources I used and made during and after the course.</p>
 <p class="text-center">
 <a id="links" href="https://drive.google.com/file/d/1jlSf5okBaAP-F4B7MRVyAgBD-51bY08r/view?usp=sharing" target="_blank">HTSM</a>, 
@@ -14,9 +15,17 @@
 <a id="links" href="https://drive.google.com/file/d/16Y2KClFPNm8ZiG3BuiBazYDIN1sfr0xq/view?usp=sharing" target="_blank">What to Do if There is a Bug?</a>
 </p>
 <br>
-<iframe data-cy="resourcesslideshow" style="position: relative; top: 0; left: 0; width: 100%; height: 100%;" src="https://flickrembed.com/cms_embed.php?source=flickr&layout=responsive&input=www.flickr.com/photos/158960531@N05/albums/72157698025337285&sort=0&by=album&theme=slider&scale=fit&limit=10&skin=default&autoplay=true" 
-scrolling="no" frameborder="0" allowFullScreen="true" webkitallowfullscreen="true" mozallowfullscreen="true"><p>Compare over <a rel="nofollow" 
-href="https://www.gapquotes.com">11 gap insurance providers</a> at GapQuotes.com</p><small>Powered by <a href="https://flickrembed.com">flickr embed</a>.
-</small></iframe><script type="text/javascript">function showpics(){var a=$("#box").val();$.getJSON("http://api.flickr.com/services/feeds/photos_public.gne?tags="+a+"&tagmode=any&format=json&jsoncallback=?",
-function(a){$("#images").hide().html(a).fadeIn("fast"),$.each(a.items,function(a,e){$("<img/>").attr("src",e.media.m).appendTo("#images")})})}</script>
+<div id="gallery" class="container">
+<div id="gallerydiv" class="popup-gallery">
+	<a href="/images/resources/FindBugSteps.png" title="Find Bug Steps"><img src="/images/resources/FindBugSteps.png" width="200" height="200"></a>
+	<a href="/images/resources/Replicate.png" title="Replicate"><img src="/images/resources/Replicate.png" width="200" height="200"></a>
+	<a href="/images/resources/Isolate.png" title="Isolate"><img src="/images/resources/Isolate.png" width="200" height="200"></a>
+	<a href="/images/resources/Generalise.png" title="Generalise"><img src="/images/resources/Generalise.png" width="200" height="200"></a>
+	<a href="/images/resources/Maximise.png" title="Maximise"><img src="/images/resources/Maximise.png" width="200" height="200"></a>
+	<a href="/images/resources/Neutral.png" title="Neutral"><img src="/images/resources/Neutral.png" width="200" height="200"></a>
+    <a href="/images/resources/Externalize.png" title="Externalize"><img src="/images/resources/Externalize.png" width="200" height="200"></a>
+    <a href="/images/resources/3basics.png" title="3 Basics of Bug Reporting"><img src="/images/resources/3basics.png" width="200" height="200"></a>
+	<a href="/images/resources/Escapa.png" title="Escapa"><img src="/images/resources/Escapa.png" width="200" height="200"></a>
+</div>
+</div>
 <% include ./../partials/footer %>
