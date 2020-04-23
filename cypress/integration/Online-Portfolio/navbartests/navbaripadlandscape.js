@@ -31,7 +31,7 @@ describe('Portfolio Navbar Tests for iPad Landscape', () => {
     it('Check that the Resources link on the Navbar goes to the Resources page', function() {
         cy.get('[data-cy=Resources]').click()
         cy.url().should('include', '/resources')
-        cy.get('[data-cy=resourcesslideshow]').should('be.visible')
+        cy.get('[data-cy=resourcesgallery]').should('be.visible')
     })
 
     it('Check that the Contact link on the Navbar goes to the Contact page', function() {
