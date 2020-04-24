@@ -41,6 +41,7 @@
     "express-force-https": "^1.0.0",
     "express-sanitizer": "^1.0.5",
     "jquery": "^3.4.1",
+    "magnific-popup": "^1.1.0",
     "method-override": "^2.3.10",
     "popper.js": "^1.16.1",
     "x-frame-options": "^1.0.0"

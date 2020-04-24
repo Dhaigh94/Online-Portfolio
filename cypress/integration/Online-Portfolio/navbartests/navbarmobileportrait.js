@@ -37,7 +37,7 @@ describe('Portfolio Navbar Tests for Mobile Portrait', () => {
         cy.get('[data-cy=Hamburger]').click()
         cy.get('[data-cy=Resources]').click()
         cy.url().should('include', '/resources')
-        cy.get('[data-cy=resourcesslideshow]').should('be.visible')
+        cy.get('[data-cy=resourcesgallery]').should('be.visible')
     })
 
     it('Check that the Contact link on the Navbar goes to the Contact page', function() {

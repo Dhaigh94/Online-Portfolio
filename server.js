@@ -16,6 +16,8 @@ app.use(xFrameOptions());
 app.use('/js', express.static(__dirname + '/node_modules/bootstrap/dist/js')); // redirect bootstrap JS
 app.use('/js', express.static(__dirname + '/node_modules/jquery/dist')); // redirect JS jQuery
 app.use('/css', express.static(__dirname + '/node_modules/bootstrap/dist/css')); // redirect CSS bootstrap
+app.use('/magnific-popupcss', express.static(__dirname + '/node_modules/magnific-popup/dist')); // redirect JS magnific-popup
+app.use('/magnific-popupjs', express.static(__dirname + '/node_modules/magnific-popup/dist')); // redirect CSS magnific-popup
 app.use(secure);
 
 const LOCAL = 8080;
