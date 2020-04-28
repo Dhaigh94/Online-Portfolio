@@ -170,6 +170,14 @@ describe('Portfolio Footer tests', () => {
         cy.get('@title').should('be.visible')
     })
 
+    it('Check when the user clicks on the CI Cypress link they go to the CI Cypress Page', function() {
+        cy.get('[data-cy=ciFooter]').click()
+        cy.url().should('include', '/ci-cypress')
+        cy.get('h1').as('title')
+        cy.get('@title').contains('CI Cypress Project')
+        cy.get('@title').should('be.visible')
+    })
+
     // Blog Footer Tests
     it('Check when the user clicks on the Blog link they go to the Blog Page', function() {
         cy.get('[data-cy=blogFooter]').click()

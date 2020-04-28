@@ -60,4 +60,13 @@ describe('Portfolio Project tests', () => {
         cy.get('@title').should('be.visible')
         cy.percySnapshot('Test Case Glass Cup')
     })
+
+    it('Check that the user can go to the CI Cypress page', function() {
+        cy.get('[data-cy=CIcypress]').click()
+        cy.url().should('include', '/ci-cypress')
+        cy.get('h1').as('title')
+        cy.get('@title').contains('CI Cypress Project')
+        cy.get('@title').should('be.visible')
+        cy.percySnapshot('CI Cypress')
+    })
 })
