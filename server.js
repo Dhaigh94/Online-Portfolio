@@ -98,6 +98,11 @@ app.get("/projects", function(req, res){
     res.render("projectpages/projects");
 });
 
+// CI/CYPRESS ROUTE
+app.get("/ci-cypress", function(req, res){
+    res.render("projectpages/cicypress");
+});
+
 // RGB COLOUR GUESSING GAME ROUTE
 app.get("/rgb-colour-guessing-game", function(req, res){
     res.render("projectpages/rgbcolourgame");
@@ -126,11 +131,6 @@ app.get("/raw-app", function(req, res){
 // GLASS CUP ROUTE
 app.get("/glass-cup", function(req, res){
     res.render("projectpages/glasscup");
-});
-
-// CI/CYPRESS ROUTE
-app.get("/ci-cypress", function(req, res){
-    res.render("projectpages/cicypress");
 });
 
 // BLOG ROUTE
