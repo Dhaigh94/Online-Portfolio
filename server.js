@@ -128,6 +128,11 @@ app.get("/glass-cup", function(req, res){
     res.render("projectpages/glasscup");
 });
 
+// CI/CYPRESS ROUTE
+app.get("/ci-cypress", function(req, res){
+    res.render("projectpages/cicypress");
+});
+
 // BLOG ROUTE
 app.get("/blog", function(req, res){
     res.render("blogpages/blog");
