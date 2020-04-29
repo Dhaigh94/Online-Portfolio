@@ -1,6 +1,6 @@
 version: 2.1
 jobs:
-  Build-and-Run:
+  Portfolio-Run:
     docker:
       - image: circleci/node:latest-browsers
     parallelism: 4
@@ -20,4 +20,4 @@ workflows:
   version: 2.1
   Portfolio-Tests:
     jobs:
-      - Build-and-Run
+      - Portfolio-Run
