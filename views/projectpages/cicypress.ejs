@@ -1,0 +1,18 @@
+<% include ./../partials/header %>
+<br>
+<h1 id="header">CI Cypress Project</h1>
+<div class="container">
+<p class="text-center">While I was at home during COVID19 I created a CI for my Online Portfolio using CircleCI.
+     My CI is runs 1 job and it runs my Cypress tests and records it on Cypress Dashboard and it alsos records the snapshot tests using Percy.
+      It was a challenge at first trying to understand YAML so it has taken a lot of runs to get it to run correctly but when it did it was awesome.
+       So now from building this it has given me a better understanding on how a CI works and it has given me more confidence when a create a pull request with new changes and merge
+        to Master that I am not going to break something. You can have a look at the code for my CI file <a id="links" href="https://github.com/Dhaigh94/Online-Portfolio/blob/master/.circleci/config.yml" target="_blank">here</a>.
+</p>
+<br>
+<iframe style="position: relative; top: 0; left: 0; width: 100%; height: 100%;" src="https://flickrembed.com/cms_embed.php?source=flickr&layout=responsive&input=www.flickr.com/photos/158960531@N05/albums/72157714070777142&sort=0&by=album&theme=slider&scale=fit&speed=3000&limit=10&skin=default&autoplay=true" 
+scrolling="no" frameborder="0" allowFullScreen="true" webkitallowfullscreen="true" 
+mozallowfullscreen="true"><p><a  href="https://www.vouchersort.co.uk">at Vouchersort</a>
+</p><small>Powered by <a href="https://flickrembed.com">flickr embed</a>.</small>
+</iframe><script type="text/javascript">function showpics(){var a=$("#box").val();$.getJSON("http://api.flickr.com/services/feeds/photos_public.gne?tags="+a+"&tagmode=any&format=json&jsoncallback=?",function(a){$("#images").hide().html(a).fadeIn("fast"),$.each(a.items,function(a,e){$("<img/>").attr("src",e.media.m).appendTo("#images")})})}</script>
+</div>
+<% include ./../partials/footer %>

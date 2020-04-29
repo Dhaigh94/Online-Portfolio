@@ -1,6 +1,6 @@
 version: 2.1
 jobs:
-  Build-and-Run:
+  Portfolio-Run:
     docker:
       - image: circleci/node:latest-browsers
     parallelism: 4
@@ -18,6 +18,6 @@ jobs:
           path: cypress/screenshots
 workflows:
   version: 2.1
-  Portfolio-Tests:
+  Portfolio-CI:
     jobs:
-      - Build-and-Run
+      - Portfolio-Run

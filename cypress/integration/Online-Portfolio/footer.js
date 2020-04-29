@@ -122,6 +122,14 @@ describe('Portfolio Footer tests', () => {
         cy.get('@title').should('be.visible')
     })
 
+    it('Check when the user clicks on the CI Cypress link they go to the CI Cypress Page', function() {
+        cy.get('[data-cy=ciFooter]').click()
+        cy.url().should('include', '/ci-cypress')
+        cy.get('h1').as('title')
+        cy.get('@title').contains('CI Cypress Project')
+        cy.get('@title').should('be.visible')
+    })
+
     it('Check when the user clicks on the RGB Colour Guessing Game link they go to the RGB Colour Guessing Game Page', function() {
         cy.get('[data-cy=rgbFooter]').click()
         cy.url().should('include', '/rgb-colour-guessing-game')
