@@ -4,7 +4,6 @@ expressSanitizer = require("express-sanitizer"),
 express = require("express"),
 xFrameOptions = require('x-frame-options'),
 secure = require('express-force-https'),
-jQuery = require('jquery'),
 app = express();
 
 // APP CONFIG
@@ -22,10 +21,6 @@ app.use('/magnific-popupjs', express.static(__dirname + '/node_modules/magnific-
 app.use(secure);
 
 const LOCAL = 8080;
-
-jQuery.htmlPrefilter = function( html ) {
-	return html;
-};
 
 // RESTFUL ROUTES
 app.get("/", function(req, res){
