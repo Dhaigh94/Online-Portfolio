@@ -1,15 +1,18 @@
 {
   "name": "davids-portfolio",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "Online Portfolio",
   "main": "server.js",
   "engines": {
-    "node": "13.8.0",
-    "npm": "6.13.7"
+    "node": "14.1.0",
+    "npm": "6.14.4"
   },
   "scripts": {
     "start": "npm install&&node server.js",
     "local": "node server.js",
+    "minor": "npm version minor",
+    "patch": "npm version patch",
+    "major": "npm version major",
     "ci:run": "start-server-and-test start http://localhost:8080 cypressci:run",
     "percy:ci": "start-server-and-test start http://localhost:8080 percyci:run",
     "docker:build": "docker build -t online-portfolio . ",
@@ -48,9 +51,9 @@
   },
   "devDependencies": {
     "@percy/cypress": "^2.3.1",
-    "cypress": "^4.4.1",
+    "cypress": "^4.5.0",
     "cypress-dark": "^1.7.14",
-    "mocha": "^7.1.1",
+    "mocha": "^7.1.2",
     "mocha-junit-reporter": "^1.23.3",
     "start-server-and-test": "^1.11.0"
   }
