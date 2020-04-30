@@ -27,7 +27,7 @@ Then you need to run ```npm run percy:run```.
 [![This project is using Percy.io for visual regression testing.](https://percy.io/static/images/percy-badge.svg)](https://percy.io/Davids-Stuff/Online-Portfolio)
 
 ### Running on CI
-This project is running on CircleCI as a CI platform which you can learn more about CircleCI here: https://circleci.com/.
+This project is running on CircleCI as a CI platform which you can learn more about CircleCI here: https://circleci.com/. You can also watch a video of my CI running here: https://youtu.be/DrWymr5WZbo.
 
 [![CircleCI](https://circleci.com/gh/Dhaigh94/Online-Portfolio.svg?style=shield)](https://circleci.com/gh/Dhaigh94/Online-Portfolio)
 

@@ -4,7 +4,7 @@
 
 body {
     background-image: linear-gradient( 178.3deg,  rgba(188,251,255,1) 11.5%, 
-    rgba(255,253,14,1) 103.1% );
+    rgb(14, 255, 163) 103.1% );
     background-size: cover;
     background-position: center;
 }
