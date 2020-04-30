@@ -1,6 +1,6 @@
 {
   "name": "davids-portfolio",
-  "version": "2.1.0",
+  "version": "3.0.0",
   "description": "Online Portfolio",
   "main": "server.js",
   "engines": {
@@ -10,9 +10,9 @@
   "scripts": {
     "start": "npm install&&node server.js",
     "local": "node server.js",
-    "minor": "npm version minor",
-    "patch": "npm version patch",
-    "major": "npm version major",
+    "minor": "bump --commit --push",
+    "patch": "bump patch --tag --tag --push",
+    "major": "bump major --tag --push",
     "ci:run": "start-server-and-test start http://localhost:8080 cypressci:run",
     "percy:ci": "start-server-and-test start http://localhost:8080 percyci:run",
     "docker:build": "docker build -t online-portfolio . ",
