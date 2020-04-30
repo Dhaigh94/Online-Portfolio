@@ -10,6 +10,9 @@
   "scripts": {
     "start": "npm install&&node server.js",
     "local": "node server.js",
+    "minor": "npm version minor",
+    "patch": "npm version patch",
+    "major": "npm version major",
     "ci:run": "start-server-and-test start http://localhost:8080 cypressci:run",
     "percy:ci": "start-server-and-test start http://localhost:8080 percyci:run",
     "docker:build": "docker build -t online-portfolio . ",
