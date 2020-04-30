@@ -1,3 +1,5 @@
+module.exports = (grunt) ->
+require('load-grunt-tasks') grunt
 grunt.loadNpmTasks('grunt-bump');
 grunt.initConfig({
     bump: {
