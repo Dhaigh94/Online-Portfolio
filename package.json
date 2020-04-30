@@ -11,7 +11,7 @@
     "start": "npm install&&node server.js",
     "local": "node server.js",
     "minor": "bump --commit --push",
-    "patch": "bump patch --tag --tag --push",
+    "patch": "bump patch --tag --push",
     "major": "bump major --tag --push",
     "ci:run": "start-server-and-test start http://localhost:8080 cypressci:run",
     "percy:ci": "start-server-and-test start http://localhost:8080 percyci:run",
