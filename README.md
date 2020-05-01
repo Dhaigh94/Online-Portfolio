@@ -7,7 +7,7 @@ This is my Online Portfolio I made from Scratch using NodeJS, HTML, CSS and Boot
 [![forthebadge](https://forthebadge.com/images/badges/uses-js.svg)](http://forthebadge.com)
 
 ### To Run the APP
-To run the app you need to install the node_modules by typing ```npm install``` in the project, then run it by typing ```npm run local```. If this is your first time running the app you can also do ```npm run start``` which will install the Node Modules and run the app at the same time.
+To run the app you need to install the node_modules by typing ```npm install``` in the project, then run it by typing ```npm run start```. If this is your first time running the app you can also do ```npm run start``` which will install the Node Modules and run the app at the same time.
 
 ### To Run the APP on Docker
 To run the app on Docker need to install docker on your machine which can be downloaded here: https://www.docker.com/products/docker-desktop. After you install Docker you need to build the container which can be done by running ```npm run docker:build```. Then you need to run the container by running ```npm run docker:run```. To close the container you need to run ```docker stop "containerID"```. You can find the containerID by running ```docker ps```.
