@@ -8,7 +8,6 @@ jobs:
       - checkout
       - run: echo $PERCY_TOKEN
       - run: echo $CYPRESS_RECORD_KEY
-      - run: npm install
       - run: npm run percy:ci
       - store_test_results:
           path: junit-results
