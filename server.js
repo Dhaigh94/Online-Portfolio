@@ -169,17 +169,17 @@ app.use(function(req, res, next){
 
     // respond with html page
     if(req.accepts('html')) {
-        res.render('errorpages/404', {error: 'The resource you where looking for is not available.'});
+        res.render('errorpages/404', {error: 'Sorry the page you are looking for cannot be found.'});
         return;
     };
 
     // respond with json
     if(req.accepts('json')) {
-        res.send({ error: 'The resource you where looking for is not available.' });
+        res.send({ error: 'Sorry the page you are looking for cannot be found.' });
         return;
     }
     // default to plain-text. send()
-    res.type('txt').send('The resource you where looking for is not available.');
+    res.type('txt').send('Sorry the page you are looking for cannot be found.');
 });
 
 // 500 TRIGGER IF SERVER IS DOWN
@@ -193,12 +193,12 @@ app.use(function(err, req, res, next){
 
     // respond with html page
     if(req.accepts('html')) {
-        res.render('errorpages/500', {error: 'Something is broken on our end, email me at davidhaigh94@gmail.com if this issue persist.'});
+        res.render('errorpages/500', {error: 'Something is broken on our end, please email me at davidhaigh94@gmail.com if this issue persists.'});
         return;
     }
 
     // default to plain-text. send()
-    res.type('txt').send('Something is broken on our end, email me at davidhaigh94@gmail.com if this issue persist.');
+    res.type('txt').send('Something is broken on our end, please email me at davidhaigh94@gmail.com if this issue persists.');
 });
 
 app.listen(process.env.PORT || LOCAL, process.env.IP, function(){
