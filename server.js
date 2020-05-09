@@ -13,7 +13,6 @@ app.use(bodyParser.urlencoded({extended: true}));
 app.use(expressSanitizer());
 app.use(methodOverride("_method"));
 app.use(xFrameOptions());
-app.use('/purify', express.static(__dirname + '/node_modules/dompurify')); // redirect dompurify
 app.use('/js', express.static(__dirname + '/node_modules/bootstrap/dist/js')); // redirect bootstrap JS
 app.use('/js', express.static(__dirname + '/node_modules/jquery/dist')); // redirect JS jQuery
 app.use('/css', express.static(__dirname + '/node_modules/bootstrap/dist/css')); // redirect CSS bootstrap
@@ -21,13 +20,7 @@ app.use('/magnific-popupcss', express.static(__dirname + '/node_modules/magnific
 app.use('/magnific-popupjs', express.static(__dirname + '/node_modules/magnific-popup/dist')); // redirect CSS magnific-popup
 app.use(secure);
 
-const dirty = ('Clean jQuery');
 const LOCAL = 8080;
-const createDOMPurify = require('dompurify');
-const { JSDOM } = require('jsdom');
-const window = new JSDOM('').window;
-const DOMPurify = createDOMPurify(window);
-const clean = DOMPurify.sanitize(dirty, {SAFE_FOR_JQUERY: true});
 
 // RESTFUL ROUTES
 app.get("/", function(req, res){
