@@ -7,6 +7,15 @@ describe('Portfolio Work tests', () => {
         cy.url().should('include', '/work')
     })
 
+    it('Check that the user can go to the Qantas Insurance page', function() {
+        cy.get('[data-cy=Qinsurance]').click()
+        cy.url().should('include', '/qantasinsurance')
+        cy.get('h1').as('title')
+        cy.get('@title').contains('Qantas Insurance')
+        cy.get('@title').should('be.visible')
+        cy.percySnapshot('QInsurance')
+    })
+
     it('Check that the user can go to the Qantas Airline page', function() {
         cy.get('[data-cy=Qairline]').click()
         cy.url().should('include', '/qantasairline')
