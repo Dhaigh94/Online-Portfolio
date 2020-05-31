@@ -32,7 +32,7 @@
   "license": "ISC",
   "dependencies": {
     "body-parser": "^1.19.0",
-    "bootstrap": "^4.4.1",
+    "bootstrap": "^4.5.0",
     "ejs": "^2.7.4",
     "express": "^4.17.1",
     "express-force-https": "^1.0.0",
@@ -45,9 +45,9 @@
   },
   "devDependencies": {
     "@percy/cypress": "^2.3.1",
-    "cypress": "^4.5.0",
+    "cypress": "^4.7.0",
     "cypress-dark": "^1.7.14",
-    "mocha": "^7.1.2",
+    "mocha": "^7.2.0",
     "mocha-junit-reporter": "^1.23.3",
     "start-server-and-test": "^1.11.0"
   }
