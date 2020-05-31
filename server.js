@@ -38,6 +38,11 @@ app.get("/work", function(req, res){
     res.render("workpages/work");
 });
 
+// QANTAS INSURANCE ROUTE
+app.get("/qantasinsurance", function(req, res){
+    res.render("workpages/qantasinsurance");
+});
+
 // QANTAS AIRLINE ROUTE
 app.get("/qantasairline", function(req, res){
     res.render("workpages/qantasairline");

@@ -25,6 +25,14 @@ describe('Portfolio Footer tests', () => {
         cy.get('@title').should('be.visible')
     })
 
+    it('Check when the user clicks on the Qantas Insurance link they go to the Qantas Insurance Page', function() {
+        cy.get('[data-cy=qantasinsuranceFooter]').click()
+        cy.url().should('include', '/qantasinsurance')
+        cy.get('h1').as('title')
+        cy.get('@title').contains('Qantas Insurance')
+        cy.get('@title').should('be.visible')
+    })
+
     it('Check when the user clicks on the Qantas Airline link they go to the Qantas Airline Page', function() {
         cy.get('[data-cy=qantasairlineFooter]').click()
         cy.url().should('include', '/qantasairline')
