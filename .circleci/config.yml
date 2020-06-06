@@ -1,5 +1,16 @@
 version: 2.1
 jobs:
+  Reporter:
+    docker:
+      - image: circleci/node:latest-browsers
+    steps:
+      - checkout
+      - run: npm install
+      - run:
+          name: "Run Jest and Collect Coverage Reports"
+          command: jest --collectCoverage=true
+      - store_test_results:
+          path: coverage
   Portfolio-Run:
     docker:
       - image: circleci/node:latest-browsers
@@ -10,11 +21,6 @@ jobs:
       - run: echo $CYPRESS_RECORD_KEY
       - run: npm install
       - run: npm run percy:ci
-      - run:
-        name: "Run Jest and Collect Coverage Reports"
-        command: jest --collectCoverage=true
-      - store_test_results:
-          path: coverage
       - store_artifacts:
           path: cypress/videos
       - store_artifacts:
@@ -23,4 +29,5 @@ workflows:
   version: 2.1
   Portfolio-CI:
     jobs:
+      - Reporter
       - Portfolio-Run
