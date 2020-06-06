@@ -12,7 +12,7 @@ jobs:
       - run: npx mochawesome-merge "cypress/results/*.json" > mochawesome.json
       - run: npm run marge:report
       - store_artifacts:
-          path: mochawesome-report/*.html
+          path: mochawesome-report
       - store_artifacts:
           path: cypress/videos
       - store_artifacts:
