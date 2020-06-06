@@ -11,7 +11,7 @@ jobs:
       - run: npm run percy:ci
       - run: npx mochawesome-merge "cypress/results/*.json" > mochawesome.json
       - run: npm run marge:report
-      - store_test_results:
+      - store_artifacts:
           path: mochawesome-report
       - store_artifacts:
           path: cypress/videos
