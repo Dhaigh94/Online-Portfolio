@@ -10,6 +10,9 @@ jobs:
       - run: echo $CYPRESS_RECORD_KEY
       - run: npm install
       - run: npm run percy:ci
+      - run:
+        name: "Run Jest and Collect Coverage Reports"
+        command: jest --collectCoverage=true
       - store_test_results:
           path: coverage
       - store_artifacts:
