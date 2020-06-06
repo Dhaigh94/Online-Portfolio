@@ -3,7 +3,6 @@ jobs:
   Portfolio-Run:
     docker:
       - image: circleci/node:latest-browsers
-    parallelism: 4
     steps:
       - checkout
       - run: echo $PERCY_TOKEN
