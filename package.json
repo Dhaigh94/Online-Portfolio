@@ -14,9 +14,10 @@
     "docker:run": "docker run -p 8080:8080 online-portfolio",
     "cypress:open": "cypress open",
     "cypress:run": "cypress run",
-    "prereport": "npm run delete:reports",
-    "delete:reports": "rm cypress/results/* || true",
-    "report": "cypress run --reporter cypress-multi-reporters --reporter-options configFile=reporter-config.json",
+    "preresults": "npm run delete:results",
+    "delete:results": "rm cypress/results/* || true",
+    "test:report": "cypress run --reporter mochawesome report:merge",
+    "marge:report": "marge mochawesome.json",
     "cypress:chrome": "cypress run --browser chrome",
     "cypress:chromium": "cypress run --browser chromium",
     "cypress:chromecanary": "cypress run --browser chrome:canary",
@@ -26,7 +27,7 @@
     "cypress:firefoxdev": "cypress run --browser firefox:dev",
     "cypress:firefoxnight": "cypress run --browser firefox:nightly",
     "percy:run": "percy exec -- cypress run",
-    "percyci:run": "percy exec -- cypress run --record --parallel --group CIPercy --reporter cypress-multi-reporters --reporter-options configFile=reporter-config.json"
+    "percyci:run": "percy exec -- cypress run --record --group CIPercy --reporter mochawesome"
   },
   "keywords": [
     "Portfolio"
@@ -50,9 +51,10 @@
     "@percy/cypress": "^2.3.1",
     "cypress": "^4.7.0",
     "cypress-dark": "^1.7.14",
-    "cypress-multi-reporters": "^1.4.0",
     "mocha": "^7.2.0",
-    "mocha-junit-reporter": "^1.23.3",
+    "mochawesome": "^6.1.1",
+    "mochawesome-merge": "^4.1.0",
+    "mochawesome-report-generator": "^5.1.0",
     "start-server-and-test": "^1.11.0"
   }
 }
