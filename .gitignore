@@ -3,3 +3,4 @@ cypress/screenshots
 node_modules
 cypress/results
 mochawesome-report
+mochawesome.json
