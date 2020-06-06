@@ -10,8 +10,8 @@ jobs:
       - run: echo $CYPRESS_RECORD_KEY
       - run: npm install
       - run: npm run percy:ci
-      - store_test_results:
-          path: junit-results
+      - store_artifacts:
+          path: cypress/results
       - store_artifacts:
           path: cypress/videos
       - store_artifacts:
