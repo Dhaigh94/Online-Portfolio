@@ -1,7 +1,7 @@
 {
   "name": "davids-portfolio",
   "jest": {
-    "verbose": true
+    "collectCoverage": true
   },
   "version": "3.0.10",
   "description": "Online Portfolio",
@@ -26,7 +26,7 @@
     "cypress:firefoxdev": "cypress run --browser firefox:dev",
     "cypress:firefoxnight": "cypress run --browser firefox:nightly",
     "percy:run": "percy exec -- cypress run",
-    "percyci:run": "percy exec -- cypress run --record --parallel --group CIPercy"
+    "percyci:run": "percy exec -- cypress run --record --parallel --group CIPercy jest --collectCoverage=true"
   },
   "keywords": [
     "Portfolio"
