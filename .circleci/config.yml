@@ -10,8 +10,10 @@ jobs:
       - run: echo $CYPRESS_RECORD_KEY
       - run: npm install
       - run: npm run percy:ci
+      - run: npx mochawesome-merge "cypress/results/*.json" > mochawesome.json
+      - run: npm run marge:report
       - store_artifacts:
-          path: cypress/results
+          path: cypress/mochawesome-report/*.html
       - store_artifacts:
           path: cypress/videos
       - store_artifacts:

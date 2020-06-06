@@ -6,9 +6,12 @@
   "pageLoadTimeout": 60000,
   "requestTimeout": 6000,
   "responseTimeout": 60000,
-  "reporter": "cypress-multi-reporters",
+  "reporter": "mochawesome",
   "reporterOptions": {
-    "configFile": "reporter-config.json"
+    "reportDir": "cypress/results",
+    "overwrite": false,
+    "html": false,
+    "json": true
   },
   "screenshotFolder": "cypress/screenshots",
   "videosFolder": "cypress/videos",
