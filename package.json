@@ -1,5 +1,8 @@
 {
   "name": "davids-portfolio",
+  "jest": {
+    "verbose": true
+  },
   "version": "3.0.10",
   "description": "Online Portfolio",
   "main": "server.js",
