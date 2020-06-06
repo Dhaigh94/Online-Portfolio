@@ -53,6 +53,7 @@
     "cypress-dark": "^1.7.14",
     "istanbul": "^0.4.5",
     "jest": "^26.0.1",
+    "jest-cli": "^26.0.1",
     "start-server-and-test": "^1.11.0"
   }
 }
