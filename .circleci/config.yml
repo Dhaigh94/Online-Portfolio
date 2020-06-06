@@ -6,12 +6,15 @@ jobs:
     parallelism: 4
     steps:
       - checkout
+      - run:
+        name: "Run Jest and Collect Coverage Reports"
+        command: jest --collectCoverage=true
       - run: echo $PERCY_TOKEN
       - run: echo $CYPRESS_RECORD_KEY
       - run: npm install
       - run: npm run percy:ci
       - store_test_results:
-          path: junit-results
+          path: coverage
       - store_artifacts:
           path: cypress/videos
       - store_artifacts:
