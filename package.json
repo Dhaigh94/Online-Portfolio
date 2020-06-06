@@ -23,7 +23,7 @@
     "cypress:firefoxdev": "cypress run --browser firefox:dev",
     "cypress:firefoxnight": "cypress run --browser firefox:nightly",
     "percy:run": "percy exec -- cypress run",
-    "percyci:run": "percy exec -- cypress run --record --parallel --group CIPercy'"
+    "percyci:run": "percy exec -- cypress run --record --parallel --group CIPercy --reporter jest --collectCoverage=true'"
   },
   "keywords": [
     "Portfolio"
