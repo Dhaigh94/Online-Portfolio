@@ -13,7 +13,7 @@
     "docker:build": "docker build -t online-portfolio . ",
     "docker:run": "docker run -p 8080:8080 online-portfolio",
     "cypress:open": "cypress open",
-    "cypress:run": "cypress run",
+    "cypress:run": "cypress run --reporter mochawesome",
     "cypress:chrome": "cypress run --browser chrome",
     "cypress:chromium": "cypress run --browser chromium",
     "cypress:chromecanary": "cypress run --browser chrome:canary",
@@ -23,7 +23,7 @@
     "cypress:firefoxdev": "cypress run --browser firefox:dev",
     "cypress:firefoxnight": "cypress run --browser firefox:nightly",
     "percy:run": "percy exec -- cypress run",
-    "percyci:run": "percy exec -- cypress run --record --parallel --group CIPercy"
+    "percyci:run": "percy exec -- cypress run --record --parallel --group CIPercy --reporter mochawesome"
   },
   "keywords": [
     "Portfolio"
@@ -47,6 +47,7 @@
     "@percy/cypress": "^2.3.1",
     "cypress": "^4.7.0",
     "cypress-dark": "^1.7.14",
+    "mochawesome": "^6.1.1",
     "start-server-and-test": "^1.11.0"
   }
 }
