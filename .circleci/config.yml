@@ -3,16 +3,15 @@ jobs:
   Portfolio-Run:
     docker:
       - image: circleci/node:latest-browsers
+    parallelism: 4
     steps:
       - checkout
       - run: echo $PERCY_TOKEN
       - run: echo $CYPRESS_RECORD_KEY
       - run: npm install
       - run: npm run percy:ci
-      - run: npx mochawesome-merge "cypress/results/*.json" > mochawesome.json
-      - run: npm run marge:report
-      - store_artifacts:
-          path: mochawesome-report
+      - store_test_results:
+          path: cypress/results
       - store_artifacts:
           path: cypress/videos
       - store_artifacts:

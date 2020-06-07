@@ -26,7 +26,7 @@
     "cypress:firefoxdev": "cypress run --browser firefox:dev",
     "cypress:firefoxnight": "cypress run --browser firefox:nightly",
     "percy:run": "percy exec -- cypress run",
-    "percyci:run": "percy exec -- cypress run --record --group CIPercy --reporter cypress-multi-reporters --reporter-options configFile=reporter-config.json"
+    "percyci:run": "percy exec -- cypress run --record --parallel --group CIPercy --reporter cypress-multi-reporters --reporter-options configFile=reporter-config.json"
   },
   "keywords": [
     "Portfolio"
