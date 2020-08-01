@@ -149,7 +149,7 @@ app.get("/my-testing-story", function(req, res){
 });
 
 // WHAT A PRODUCT OWNER WANTS FROM A JUNIOR TESTER ROUTE
-app.get("/what-a-product-owner-wants-from-a-junior-tester", function(req, res){
+app.get("/junior-tester", function(req, res){
     res.render("blogpages/juniortester");
 });
 
