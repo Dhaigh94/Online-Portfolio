@@ -197,7 +197,7 @@ describe('Portfolio Footer tests', () => {
 
     it('Check when the user clicks on the What a Product Owner Wants from a Junior Tester link they go to the What a Product Owner Wants from a Junior Tester Page', function() {
         cy.get('[data-cy=wapowfajtFooter]').click()
-        cy.url().should('include', '/what-a-product-owner-wants-from-a-junior-tester')
+        cy.url().should('include', '/junior-tester')
         cy.get('h1').as('title')
         cy.get('@title').contains('What a Product Owner Wants from a Junior Tester')
         cy.get('@title').should('be.visible')

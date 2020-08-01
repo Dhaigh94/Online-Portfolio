@@ -12,7 +12,7 @@ describe('Portfolio Social Media tests', () => {
 
     it('Check that the Linkedin Button link is correct', function() {
         cy.get('[data-cy=Linkedin]').should('be.visible')
-        cy.get('[data-cy=Linkedin]').should('have.attr', 'href').and('include', 'https://www.linkedin.com/in/david-haigh-46161097/')
+        cy.get('[data-cy=Linkedin]').should('have.attr', 'href').and('include', 'https://www.linkedin.com/in/davidhaigh94/')
     })
 
     it('Check that the Twitter Button link is correct', function() {
