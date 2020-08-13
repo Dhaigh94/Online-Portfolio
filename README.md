@@ -18,6 +18,7 @@ To run Cypress to need to type ```npm run cypress:open``` and then choose the te
 To run Cypress in the command line you need to type ```npm run cypress:run``` which will run all the tests.
 
 [![Cypress Dashboard](https://img.shields.io/badge/cypress-dashboard-brightgreen.svg)](https://dashboard.cypress.io/projects/hmdg5m/runs)
+[![Online-Portfolio](https://img.shields.io/endpoint?url=https://dashboard.cypress.io/badge/simple/hmdg5m/master&style=flat&logo=cypress)](https://dashboard.cypress.io/projects/hmdg5m/runs)
 
 ### To Run Percy
 To run Percy you need to make sure that the app is running.
@@ -30,7 +31,6 @@ Then you need to run ```npm run percy:run```.
 This project is running on CircleCI as a CI platform which you can learn more about CircleCI here: https://circleci.com/. You can also watch a video of my CI running here: https://youtu.be/DrWymr5WZbo.
 
 [![CircleCI](https://circleci.com/gh/Dhaigh94/Online-Portfolio.svg?style=shield)](https://circleci.com/gh/Dhaigh94/Online-Portfolio)
-[![Online-Portfolio](https://img.shields.io/endpoint?url=https://dashboard.cypress.io/badge/simple/hmdg5m/master&style=flat&logo=cypress)](https://dashboard.cypress.io/projects/hmdg5m/runs)
 
 ### Social Media
 Here is some Social Media Channels you can follow me on.
