@@ -1,4 +1,4 @@
-var bodyParser = require("body-parser"),
+const bodyParser = require("body-parser"),
 methodOverride = require("method-override"),
 expressSanitizer = require("express-sanitizer"),
 express = require("express"),
