@@ -47,6 +47,7 @@
     "x-frame-options": "^1.0.0"
   },
   "devDependencies": {
+    "@percy/cli": "*",
     "@percy/cypress": "^3.0.0",
     "cypress": "^7.0.0",
     "cypress-dark": "^1.7.14",
