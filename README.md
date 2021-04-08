@@ -25,7 +25,7 @@ To run Percy you need to make sure that the app is running.
 Then you need to export the Percy token in the ENV variables, if you are using Windows you have to type ```set PERCY_TOKEN=yourtoken```, for Mac ```export PERCY_TOKEN=yourtoken```.
 Then you need to run ```npm run percy:run```.
 
-[![This project is using Percy.io for visual regression testing.](https://percy.io/static/images/percy-badge.svg)](https://percy.io/04df39c6/online-portfolio)
+[![This project is using Percy.io for visual regression testing.](https://percy.io/static/images/percy-badge.svg)](https://percy.io/04df39c6/Online-Portfolio)
 
 ### Running on CI
 This project is running on CircleCI as a CI platform which you can learn more about CircleCI here: https://circleci.com/. You can also watch a video of my CI running here: https://youtu.be/DrWymr5WZbo.
