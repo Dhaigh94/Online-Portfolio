@@ -7,7 +7,7 @@ This is my Online Portfolio I made from Scratch using NodeJS, HTML, CSS and Boot
 [![forthebadge](https://forthebadge.com/images/badges/uses-js.svg)](http://forthebadge.com)
 
 ### To Run the APP
-To run the app you need to install the node_modules by typing ```npm install``` in the project, then run it by typing ```npm run start```. If this is your first time running the app you can also do ```npm run start``` which will install the Node Modules and run the app at the same time.
+To run the app you need to install the node_modules by typing ```npm install``` in the project, then run it by typing ```npm run start```. Or if you are doing changes to the server.js file you can do ```npm run dev``` which will use nodemon which will restart the server everytime you do changes.
 
 ### To Run the APP on Docker
 To run the app on Docker need to install docker on your machine which can be downloaded here: https://www.docker.com/products/docker-desktop. After you install Docker you need to build the container which can be done by running ```npm run docker:build```. Then you need to run the container by running ```npm run docker:run```. To close the container you need to run ```docker stop "containerID"```. You can find the containerID by running ```docker ps```.
@@ -25,7 +25,7 @@ To run Percy you need to make sure that the app is running.
 Then you need to export the Percy token in the ENV variables, if you are using Windows you have to type ```set PERCY_TOKEN=yourtoken```, for Mac ```export PERCY_TOKEN=yourtoken```.
 Then you need to run ```npm run percy:run```.
 
-[![This project is using Percy.io for visual regression testing.](https://percy.io/static/images/percy-badge.svg)](https://percy.io/Davids-Stuff/Online-Portfolio)
+[![This project is using Percy.io for visual regression testing.](https://percy.io/static/images/percy-badge.svg)](https://percy.io/04df39c6/online-portfolio)
 
 ### Running on CI
 This project is running on CircleCI as a CI platform which you can learn more about CircleCI here: https://circleci.com/. You can also watch a video of my CI running here: https://youtu.be/DrWymr5WZbo.
