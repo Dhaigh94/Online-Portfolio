@@ -8,7 +8,7 @@ describe('Portfolio Work tests', () => {
     })
 
     it('Check that the user can go to the Qantas Insurance page', function() {
-        cy.get('[data-cy=Qinsurance]').click()
+        cy.get('[data-cy=Qinsurance]').click({ force: true })
         cy.url().should('include', '/qantasinsurance')
         cy.get('h1').as('title')
         cy.get('@title').contains('Qantas Insurance')
@@ -17,7 +17,7 @@ describe('Portfolio Work tests', () => {
     })
 
     it('Check that the user can go to the Qantas Airline page', function() {
-        cy.get('[data-cy=Qairline]').click()
+        cy.get('[data-cy=Qairline]').click({ force: true })
         cy.url().should('include', '/qantasairline')
         cy.get('h1').as('title')
         cy.get('@title').contains('Qantas Airline')
@@ -26,7 +26,7 @@ describe('Portfolio Work tests', () => {
     })
 
     it('Check that the user can go to the Qantas Loyalty page', function() {
-        cy.get('[data-cy=Qloyalty]').click()
+        cy.get('[data-cy=Qloyalty]').click({ force: true })
         cy.url().should('include', '/qantasloyalty')
         cy.get('h1').as('title')
         cy.get('@title').contains('Qantas Loyalty')
@@ -35,7 +35,7 @@ describe('Portfolio Work tests', () => {
     })
 
     it('Check that the user can go to the Lorica Health page', function() {
-        cy.get('[data-cy=Lorica]').click()
+        cy.get('[data-cy=Lorica]').click({ force: true })
         cy.url().should('include', '/lorica-health')
         cy.get('h1').as('title')
         cy.get('@title').contains('Lorica Health')
@@ -44,7 +44,7 @@ describe('Portfolio Work tests', () => {
     })
 
     it('Check that the user can go to the Suncorp page', function() {
-        cy.get('[data-cy=Suncorp]').click()
+        cy.get('[data-cy=Suncorp]').click({ force: true })
         cy.url().should('include', '/suncorp')
         cy.get('h1').as('title')
         cy.get('@title').contains('Suncorp')
@@ -53,7 +53,7 @@ describe('Portfolio Work tests', () => {
     })
 
     it('Check that the user can go to the Wired2Cloud page', function() {
-        cy.get('[data-cy=Wired2Cloud]').click()
+        cy.get('[data-cy=Wired2Cloud]').click({ force: true })
         cy.url().should('include', '/wired2cloud')
         cy.get('h1').as('title')
         cy.get('@title').contains('Wired2Cloud')
@@ -62,7 +62,7 @@ describe('Portfolio Work tests', () => {
     })
 
     it('Check that the user can go to the SIRC page', function() {
-        cy.get('[data-cy=SIRC]').click()
+        cy.get('[data-cy=SIRC]').click({ force: true })
         cy.url().should('include', '/sirc')
         cy.get('h1').as('title')
         cy.get('@title').contains('SIRC')
@@ -71,7 +71,7 @@ describe('Portfolio Work tests', () => {
     })
 
     it('Check that the user can go to the Covata page', function() {
-        cy.get('[data-cy=Covata]').click()
+        cy.get('[data-cy=Covata]').click({ force: true })
         cy.url().should('include', '/covata')
         cy.get('h1').as('title')
         cy.get('@title').contains('Covata')
@@ -80,7 +80,7 @@ describe('Portfolio Work tests', () => {
     })
 
     it('Check that the user can go to the CareerVentures page', function() {
-        cy.get('[data-cy=CareerVentures]').click()
+        cy.get('[data-cy=CareerVentures]').click({ force: true })
         cy.url().should('include', '/careerventures')
         cy.get('h1').as('title')
         cy.get('@title').contains('CareerVentures')

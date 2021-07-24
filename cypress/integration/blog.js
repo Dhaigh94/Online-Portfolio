@@ -17,7 +17,7 @@ describe('Portfolio Blog tests', () => {
     })
 
     it('Check that the user can go to the My Testing Story blog page', function() {
-        cy.get('[data-cy=Story]').click()
+        cy.get('[data-cy=Story]').click({ force: true })
         cy.url().should('include', '/my-testing-story')
         cy.get('h1').as('title')
         cy.get('@title').contains('My Testing Story')
