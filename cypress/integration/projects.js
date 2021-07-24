@@ -8,7 +8,7 @@ describe('Portfolio Project tests', () => {
     })
 
     it('Check that the user can go to the CI Cypress page', function() {
-        cy.get('[data-cy=CIcypress]').click()
+        cy.get('[data-cy=CIcypress]').click({ force: true })
         cy.url().should('include', '/ci-cypress')
         cy.get('h1').as('title')
         cy.get('@title').contains('CI Cypress Project')
@@ -17,7 +17,7 @@ describe('Portfolio Project tests', () => {
     })
 
     it('Check that the user can go to the RGB Colour Game page', function() {
-        cy.get('[data-cy=RGB]').click()
+        cy.get('[data-cy=RGB]').click({ force: true })
         cy.url().should('include', '/rgb-colour-guessing-game')
         cy.get('h1').as('title')
         cy.get('@title').contains('RGB Colour Guessing Game')
@@ -26,7 +26,7 @@ describe('Portfolio Project tests', () => {
     })
 
     it('Check that the user can go to the Patatap Clone page', function() {
-        cy.get('[data-cy=Patatap]').click()
+        cy.get('[data-cy=Patatap]').click({ force: true })
         cy.url().should('include', '/patatap-clone')
         cy.get('h1').as('title')
         cy.get('@title').contains('Patatap Clone')
@@ -35,7 +35,7 @@ describe('Portfolio Project tests', () => {
     })
 
     it('Check that the user can go to the Photo Board page', function() {
-        cy.get('[data-cy=Photo]').click()
+        cy.get('[data-cy=Photo]').click({ force: true })
         cy.url().should('include', '/photo-board')
         cy.get('h1').as('title')
         cy.get('@title').contains('Photo Board')
@@ -44,7 +44,7 @@ describe('Portfolio Project tests', () => {
     })
 
     it('Check that the user can go to the Image Gallery page', function() {
-        cy.get('[data-cy=Image]').click()
+        cy.get('[data-cy=Image]').click({ force: true })
         cy.url().should('include', '/image-gallery')
         cy.get('h1').as('title')
         cy.get('@title').contains('Image Gallery')
@@ -53,7 +53,7 @@ describe('Portfolio Project tests', () => {
     })
 
     it('Check that the user can go to the RAW APP page', function() {
-        cy.get('[data-cy=RAW]').click()
+        cy.get('[data-cy=RAW]').click({ force: true })
         cy.url().should('include', '/raw-app')
         cy.get('h1').as('title')
         cy.get('@title').contains('RAW APP')

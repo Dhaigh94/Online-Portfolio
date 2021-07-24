@@ -18,7 +18,7 @@ describe('Error Page Tests', () => {
         cy.get('[data-cy="404"]').should('be.visible')
         cy.get('[data-cy="cannotfind"]').should('be.visible')
         cy.get('[data-cy="backhome"]').should('be.visible')
-        cy.get('[data-cy="backhome"]').click()
+        cy.get('[data-cy="backhome"]').click({ force: true })
         cy.get('h1').as('title')
         cy.get('@title').contains('About Me')
         cy.get('@title').should('be.visible')

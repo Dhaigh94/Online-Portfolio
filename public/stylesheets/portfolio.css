@@ -1,5 +1,6 @@
 #top {
     color: #FF6969;
+    margin-left: 15px;
 }
 
 body {
@@ -27,6 +28,10 @@ body {
 
 #links {
     color: #dc3545;
+}
+
+#topnav {
+  padding-left: 8px;
 }
 
 #qantas {
@@ -66,8 +71,9 @@ p {
 
 #Grid2 {
     object-fit: cover;
-    width: 500px;
+    width: 600px;
     height: 400px;
+    margin-left: 5px;
 }
 
 strong {

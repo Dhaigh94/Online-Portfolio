@@ -18,7 +18,7 @@ describe('Portfolio Home Page Tests', () => {
 
     it('Check that the Work link is going to the Work webpage', function() {
         cy.get('[data-cy=Worklink]').should('be.visible')
-        cy.get('[data-cy=Worklink]').click()
+        cy.get('[data-cy=Worklink]').click({ force: true })
         cy.url().should('include', '/work')
     })
 
