@@ -8,8 +8,8 @@
     "npm": "7.7.6"
   },
   "scripts": {
-    "start": "node server.js",
-    "dev": "nodemon server.js",
+    "start": "node app.js",
+    "dev": "nodemon app.js",
     "percy:ci": "start-server-and-test start http://localhost:8080 percyci:run",
     "docker:build": "docker build -t online-portfolio . ",
     "docker:run": "docker run -p 8080:8080 online-portfolio",
