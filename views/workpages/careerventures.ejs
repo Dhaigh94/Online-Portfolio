@@ -1,4 +1,4 @@
-<% include ./../partials/header %>
+<%- include ("./../partials/header") %>
 <br>
 <h1 id="header">CareerVentures</h1>
 <div class="container">
@@ -17,4 +17,4 @@ href="https://www.gapquotes.com">11 gap insurance providers</a> at GapQuotes.com
 flickr embed</a>.</small></iframe><script type="text/javascript">function showpics(){var a=$("#box").val();$.getJSON("http://api.flickr.com/services/feeds/photos_public.gne?tags="+a+"&tagmode=any&format=json&jsoncallback=?",
 function(a){$("#images").hide().html(a).fadeIn("fast"),$.each(a.items,function(a,e){$("<img/>").attr("src",e.media.m).appendTo("#images")})})}</script>
 </div>
-<% include ./../partials/footer %>
+<%- include ("./../partials/footer") %>

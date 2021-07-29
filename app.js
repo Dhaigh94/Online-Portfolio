@@ -1,6 +1,4 @@
-const methodOverride = require("method-override"),
-expressSanitizer = require("express-sanitizer"),
-express = require("express"),
+const express = require("express"),
 xFrameOptions = require('x-frame-options'),
 secure = require('express-force-https'),
 app = express();
@@ -9,8 +7,6 @@ app = express();
 app.set("view engine", "ejs");
 app.use(express.static("public"));
 app.use(express.urlencoded({extended: true}));
-app.use(expressSanitizer());
-app.use(methodOverride("_method"));
 app.use(xFrameOptions());
 app.use('/js', express.static(__dirname + '/node_modules/bootstrap/dist/js')); // redirect bootstrap JS
 app.use('/js', express.static(__dirname + '/node_modules/jquery/dist')); // redirect JS jQuery
