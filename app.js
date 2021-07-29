@@ -1,5 +1,4 @@
-const bodyParser = require("body-parser"),
-methodOverride = require("method-override"),
+const methodOverride = require("method-override"),
 expressSanitizer = require("express-sanitizer"),
 express = require("express"),
 xFrameOptions = require('x-frame-options'),
@@ -9,7 +8,7 @@ app = express();
 // APP CONFIG
 app.set("view engine", "ejs");
 app.use(express.static("public"));
-app.use(bodyParser.urlencoded({extended: true}));
+app.use(express.urlencoded({extended: true}));
 app.use(expressSanitizer());
 app.use(methodOverride("_method"));
 app.use(xFrameOptions());
@@ -20,7 +19,7 @@ app.use('/magnific-popupcss', express.static(__dirname + '/node_modules/magnific
 app.use('/magnific-popupjs', express.static(__dirname + '/node_modules/magnific-popup/dist')); // redirect CSS magnific-popup
 app.use(secure);
 
-const LOCAL = 8080;
+const local = 8080;
 
 // RESTFUL ROUTES
 app.get("/", function(req, res){
@@ -206,6 +205,6 @@ app.use(function(err, req, res, next){
     res.type('txt').send('Something is broken on our end, please email me at davidhaigh94@gmail.com if this issue persists.');
 });
 
-app.listen(process.env.PORT || LOCAL, process.env.IP, function(){
-    console.log(`PORTFOLIO IS RUNNING! go to http://localhost:${LOCAL}`);
+app.listen(process.env.PORT || local, process.env.IP, function(){
+    console.log(`PORTFOLIO IS RUNNING! go to http://localhost:${local}`);
 });
