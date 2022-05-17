@@ -1,6 +1,6 @@
 {
   "name": "davids-portfolio",
-  "version": "3.0.31",
+  "version": "3.0.32",
   "description": "Online Portfolio",
   "main": "app.js",
   "engines": {
