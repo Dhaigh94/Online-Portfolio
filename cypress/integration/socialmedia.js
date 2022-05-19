@@ -22,7 +22,7 @@ describe('Portfolio Social Media tests', () => {
 
     it('Check that the Instagram Button link is correct', function() {
         cy.get('[data-cy=Instagram]').should('be.visible')
-        cy.get('[data-cy=Instagram]').should('have.attr', 'href').and('include', 'https://www.instagram.com/bugdevildavid/')
+        cy.get('[data-cy=Instagram]').should('have.attr', 'href').and('include', 'https://www.instagram.com/daveangel1694/')
     })
 
     it('Check that the Github Button link is correct', function() {
