@@ -22,6 +22,10 @@ body {
   display:inline-table; 
 }
 
+.bullet ol { 
+  display:inline-table; 
+}
+
  .bullet li { 
   display:inline;
 }
