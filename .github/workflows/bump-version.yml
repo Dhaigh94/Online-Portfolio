@@ -47,10 +47,10 @@ jobs:
         run: |
           npm install
           npm run ${{ inputs.bump_type }}
+          git push --delete origin refs/tags/master
           
       - name: Commit changes
         run: |
-          git push --delete origin refs/tags/master
           git config user.email "davidhaigh94@gmail.com" # Note 2
           git config user.name "Dhaigh94" # Note 2
           git diff HEAD
