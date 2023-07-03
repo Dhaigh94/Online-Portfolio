@@ -50,8 +50,10 @@ jobs:
           
       - name: Commit changes
         run: |
+          git push --delete origin refs/tags/master
           git config user.email "davidhaigh94@gmail.com" # Note 2
           git config user.name "Dhaigh94" # Note 2
+          git diff HEAD
           git add package.json package-lock.json # Note 4
           git commit -m "Bump version ${{ inputs.bump_type }} VERSION=$(npm run version --silent)"
         
