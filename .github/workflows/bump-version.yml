@@ -45,12 +45,12 @@ jobs:
 
       - name: Bump the version number # Note 3
         run: |
+          git push --delete origin refs/tags/master
           npm install
           npm run ${{ inputs.bump_type }}
           
       - name: Commit changes
         run: |
-          git push --delete origin refs/tags/master
           git config user.email "davidhaigh94@gmail.com" # Note 2
           git config user.name "Dhaigh94" # Note 2
           git diff HEAD
