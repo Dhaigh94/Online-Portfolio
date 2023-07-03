@@ -34,14 +34,14 @@ jobs:
         with:
           machine: api.github.com
           username: Dhaigh94 # Note 2
-          password: ${{ secrets.needtoaddtoken }} # Note 2
+          password: ${{ secrets.PORTFOLIO_TOKEN }} # Note 2
 
       - name: Configure netrc for github.com
         uses: extractions/netrc@v1
         with:
           machine: github.com
           username: Dhaigh94 # Note 2
-          password: ${{ secrets.needtoaddtoken }} # Note 2
+          password: ${{ secrets.PORTFOLIO_TOKEN }} # Note 2
 
       - name: Bump the version number # Note 3
         run: |
@@ -59,7 +59,7 @@ jobs:
       - name: Push changes
         uses: ad-m/github-push-action@master
         with:
-          github_token: ${{ secrets.needtoaddtoken }} # Note 5
+          github_token: ${{ secrets.PORTFOLIO_TOKEN }} # Note 5
           branch: ${{ github.ref }}
 
       - name: Display new version
