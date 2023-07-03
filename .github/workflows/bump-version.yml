@@ -1,0 +1,66 @@
+name: Bump Version
+on:
+  workflow_dispatch:
+    inputs:
+      bump_type:
+        required: true
+        type: choice
+        options:
+          - patch
+          - minor
+          - major
+  workflow_call:
+    inputs:
+      bump_type: # "major", "minor" or "patch"
+        required: true
+        type: string
+jobs:
+  bump-podspec-version:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout project
+        uses: actions/checkout@v3
+        with:
+          persist-credentials: false # Note 1
+
+      - name: Set up Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: '2.7.2'
+          bundler-cache: true
+
+      - name: Configure netrc for api.github.com
+        uses: extractions/netrc@v1
+        with:
+          machine: api.github.com
+          username: Dhaigh94 # Note 2
+          password: ${{ secrets.needtoaddtoken }} # Note 2
+
+      - name: Configure netrc for github.com
+        uses: extractions/netrc@v1
+        with:
+          machine: github.com
+          username: Dhaigh94 # Note 2
+          password: ${{ secrets.needtoaddtoken }} # Note 2
+
+      - name: Bump the version number # Note 3
+        run: |
+          npm install
+          npm run ${{ inputs.bump_type }}
+          
+      - name: Commit changes
+        run: |
+          git config user.email "davidhaigh94@gmail.com" # Note 2
+          git config user.name "Dhaigh94" # Note 2
+          git diff HEAD
+          git add package.json package-lock.json # Note 4
+          git commit -m "Bump version ${{ inputs.bump_type }} VERSION=$(npm run version --silent)"
+        
+      - name: Push changes
+        uses: ad-m/github-push-action@master
+        with:
+          github_token: ${{ secrets.needtoaddtoken }} # Note 5
+          branch: ${{ github.ref }}
+
+      - name: Display new version
+        run: VERSION=$(npm run version --silent)
