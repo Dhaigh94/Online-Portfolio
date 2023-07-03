@@ -1,0 +1,24 @@
+name: Version bump on merge
+on:
+  pull_request:
+    branches: [ "master"] # Note 1
+    types: [ closed ] # Note 2
+jobs:
+  perform-patch-bump:
+    if: ${{ (github.event.pull_request.merged == true) && (contains(github.event.pull_request.labels.*.name, 'bump:patch')) }}
+    secrets: inherit
+    uses: Dhaigh94/Online-Portfolio/.github/workflows/bump-version.yml@master # Note 3
+    with:
+      bump_type: patch
+  perform-minor-bump:
+    if: ${{ (github.event.pull_request.merged == true) && (contains(github.event.pull_request.labels.*.name, 'bump:minor')) }}
+    secrets: inherit
+    uses: Dhaigh94/Online-Portfolio/.github/workflows/bump-version.yml@master # Note 3
+    with:
+      bump_type: minor
+  perform-major-bump:
+    if: ${{ (github.event.pull_request.merged == true) && (contains(github.event.pull_request.labels.*.name, 'bump:major')) }}
+    secrets: inherit
+    uses: Dhaigh94/Online-Portfolio/.github/workflows/bump-version.yml@master # Note 3
+    with:
+      bump_type: major
