@@ -54,7 +54,7 @@ jobs:
           git config user.name "Dhaigh94" # Note 2
           git diff HEAD
           git add package.json package-lock.json # Note 4
-          git commit -m "Bump version ${{ inputs.bump_type }} VERSION=$(npm run version --silent)"
+          git commit -m "Bump VERSION=$(npm run version --silent)" ${{ inputs.bump_type }}
         
       - name: Push changes
         uses: ad-m/github-push-action@master
