@@ -5,16 +5,12 @@ on:
 jobs:
   label:
     runs-on: ubuntu-latest
+    permissions:
+      issues: write
+      pull-requests: write
     steps:
-      - id: check-labels
-        uses: mheap/github-action-required-labels@v5
+      - uses: mheap/github-action-required-labels@v5
         with:
-          mode: minimum
+          mode: exactly
           count: 1
           labels: "bump:patch, bump:minor, bump:major, bump:none"
-      - run: |
-          echo "Enabled Features:"
-          for f in $(echo "{{steps.check-labels.outputs.labels}}" | sed "s/,/ /g")
-          do
-            echo "$f"
-          done
