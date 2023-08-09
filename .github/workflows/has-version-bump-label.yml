@@ -3,11 +3,18 @@ on:
   pull_request:
     types: [opened, labeled, unlabeled, synchronize]
 jobs:
-  require-version-bump-label:
+  label:
     runs-on: ubuntu-latest
     steps:
-      - uses: mheap/github-action-required-labels@v5
+      - id: check-labels
+        uses: mheap/github-action-required-labels@v5
         with:
-          mode: exactly
+          mode: minimum
           count: 1
           labels: "bump:patch, bump:minor, bump:major, bump:none"
+      - run: |
+          echo "Enabled Features:"
+          for f in $(echo "{{steps.check-labels.outputs.labels}}" | sed "s/,/ /g")
+          do
+            echo "$f"
+          done
