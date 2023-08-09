@@ -3,11 +3,15 @@ on:
   pull_request:
     types: [opened, labeled, unlabeled, synchronize]
 jobs:
-  require-version-bump-label:
+  checking-label:
     runs-on: ubuntu-latest
+    permissions:
+      issues: write
+      pull-requests: write
     steps:
-      - uses: mheap/github-action-required-labels@v2
+      - uses: mheap/github-action-required-labels@v5
         with:
           mode: exactly
           count: 1
           labels: "bump:patch, bump:minor, bump:major, bump:none"
+          add_comment: true
