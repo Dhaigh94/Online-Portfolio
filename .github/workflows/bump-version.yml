@@ -19,19 +19,19 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout project
-        uses: actions/checkout@v3
+        uses: actions/checkout@v3.5.3
         with:
           persist-credentials: false # Note 1
 
       - name: Configure netrc for api.github.com
-        uses: extractions/netrc@v1
+        uses: extractions/netrc@v1.4.0
         with:
           machine: api.github.com
           username: ${{ secrets.USERNAME }} # Note 2
           password: ${{ secrets.PORTFOLIO_TOKEN }} # Note 2
 
       - name: Configure netrc for github.com
-        uses: extractions/netrc@v1
+        uses: extractions/netrc@v1.4.0
         with:
           machine: github.com
           username: Dhaigh94 # Note 2

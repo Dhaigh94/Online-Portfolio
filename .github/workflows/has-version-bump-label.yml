@@ -9,9 +9,10 @@ jobs:
       issues: write
       pull-requests: write
     steps:
-      - uses: mheap/github-action-required-labels@v5
+      - uses: mheap/github-action-required-labels@v5.1.0
         with:
           mode: exactly
           count: 1
           labels: "bump:patch, bump:minor, bump:major, bump:none"
           add_comment: true
+          message: "This PR does not have correct labels to autobump the version number please choose {{count}} of these: {{ provided }}. Current labels on the PR are: {{ applied }}"
