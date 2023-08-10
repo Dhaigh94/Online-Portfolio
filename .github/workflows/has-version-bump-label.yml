@@ -3,7 +3,7 @@ on:
   pull_request:
     types: [opened, labeled, unlabeled, synchronize]
 jobs:
-  checking-label:
+  checking-labels:
     runs-on: ubuntu-latest
     permissions:
       issues: write
