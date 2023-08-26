@@ -12,7 +12,7 @@ describe('Portfolio Footer tests', () => {
         cy.get('[data-cy=homeFooter]').click()
         cy.url().should('include', '/home')
         cy.get('h1').as('title')
-        cy.get('@title').contains('About Me')
+        cy.get('@title').contains('Profile Overview')
         cy.get('@title').should('be.visible')
     })
 

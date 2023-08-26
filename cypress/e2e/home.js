@@ -7,7 +7,7 @@ describe('Portfolio Home Page Tests', () => {
 
     it('Check that the title on the home page says About Me', function() {
         cy.get('h1').as('title')
-        cy.get('@title').contains('About Me')
+        cy.get('@title').contains('Profile Overview')
         cy.get('@title').should('be.visible')
     })
 
