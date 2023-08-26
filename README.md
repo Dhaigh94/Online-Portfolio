@@ -1,11 +1,6 @@
 # Online-Portfolio
 This is my Online Portfolio I made from Scratch using NodeJS, HTML, CSS and Bootstrap.
 
-[![forthebadge](https://forthebadge.com/images/badges/uses-css.svg)](http://forthebadge.com)
-[![forthebadge](https://forthebadge.com/images/badges/uses-git.svg)](http://forthebadge.com)
-[![forthebadge](https://forthebadge.com/images/badges/uses-html.svg)](http://forthebadge.com)
-[![forthebadge](https://forthebadge.com/images/badges/uses-js.svg)](http://forthebadge.com)
-
 ### To Run the APP
 To run the app you need to install the node_modules by typing ```npm install``` in the project, then run it by typing ```npm run start```. Or if you are doing changes to the server.js file you can do ```npm run dev``` which will use nodemon which will restart the server everytime you do changes.
 
