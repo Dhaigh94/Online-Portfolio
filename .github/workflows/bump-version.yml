@@ -34,7 +34,7 @@ jobs:
         uses: extractions/netrc@v1.4.0
         with:
           machine: github.com
-          username: Dhaigh94 # Note 2
+          username: ${{ secrets.USERNAME }} # Note 2
           password: ${{ secrets.PORTFOLIO_TOKEN }} # Note 2
 
       - name: Bump the version number # Note 3
