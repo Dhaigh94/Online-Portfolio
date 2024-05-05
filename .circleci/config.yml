@@ -2,7 +2,7 @@ version: 2.1
 jobs:
   Portfolio-Run:
     docker:
-      - image: circleci/node:latest-browsers
+      - image: cimg/node:20.4.0-browsers
     parallelism: 4
     steps:
       - checkout
