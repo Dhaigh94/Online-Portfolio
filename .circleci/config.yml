@@ -1,13 +1,10 @@
 version: 2.1
-orbs:
-  browser-tools: circleci/browser-tools@x.y
 jobs:
   Portfolio-Run:
     docker:
       - image: cimg/node:20.4.0-browsers
     parallelism: 4
     steps:
-      - browser-tools/install-browser-tools
       - checkout
       - run: echo $PERCY_TOKEN
       - run: echo $CYPRESS_RECORD_KEY
