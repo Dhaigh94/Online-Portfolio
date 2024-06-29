@@ -48,18 +48,18 @@
     "express": "^4.19.2",
     "express-force-https": "^1.0.0",
     "jquery": "^3.7.1",
-    "magnific-popup": "^1.1.0",
+    "magnific-popup": "^1.2.0",
     "x-frame-options": "^1.0.0"
   },
   "devDependencies": {
     "@percy/cli": "*",
     "@percy/cypress": "^3.1.2",
-    "cypress": "^13.8.1",
+    "cypress": "^13.12.0",
     "cypress-dark": "^1.8.3",
     "cypress-multi-reporters": "^1.6.4",
-    "mocha": "^10.4.0",
+    "mocha": "^10.5.2",
     "mocha-junit-reporter": "^2.2.1",
-    "nodemon": "^3.1.0",
-    "start-server-and-test": "^2.0.3"
+    "nodemon": "^3.1.4",
+    "start-server-and-test": "^2.0.4"
   }
 }
