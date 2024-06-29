@@ -1,6 +1,6 @@
 {
   "name": "davids-portfolio",
-  "version": "5.4.0",
+  "version": "5.5.0",
   "description": "Online Portfolio",
   "main": "app.js",
   "engines": {
