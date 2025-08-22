@@ -4,8 +4,8 @@
   "description": "Online Portfolio",
   "main": "app.js",
   "engines": {
-    "node": "20.9.0",
-    "npm": "10.1.0"
+    "node": "22.18.0",
+    "npm": "10.9.3"
   },
   "scripts": {
     "start": "node app.js",
