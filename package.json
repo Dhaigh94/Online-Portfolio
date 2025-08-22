@@ -10,8 +10,7 @@
   "scripts": {
     "start": "node app.js",
     "dev": "nodemon app.js",
-    "updates": "npx npm-check-updates -u",
-    "updatelock": "npm update",
+    "updates": "ncu --interactive",
     "version": "echo $npm_package_version",
     "percy:ci": "start-server-and-test start http://localhost:8080 percyci:run",
     "docker:build": "docker build -t online-portfolio . ",
